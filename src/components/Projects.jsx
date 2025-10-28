@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import { projects } from '../data/projectsData'
 
+
 export default function Projects() {
     const [filter, setFilter] = useState('All')
     const tags = ['All', ...new Set(projects.flatMap(p => p.tags))]

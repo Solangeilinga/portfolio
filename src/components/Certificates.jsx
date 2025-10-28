@@ -3,87 +3,97 @@ import { FaJava, FaPython, FaAws, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import { SiCoursera, SiUdemy, SiCisco } from "react-icons/si";
 import { MdSecurity } from "react-icons/md";
 
+
+import cssCert from '../assets/css.png';
+import html from '../assets/HTML.png';
+import Python_data_analysis from '../assets/Python data analysis.png';
+import ui from '../assets/UI.png';
+import Python_data_structures from '../assets/Python data structures.png';
+import wordpress from '../assets/Wordpress.png';
+import data from '../assets/data_analysis.png';
+import Covid from '../assets/Covid.png';
+// ... importez toutes vos images
+
 // Données des certificats
 const certificates = [
     {
         id: 1,
         title: "Développement Java Avancé",
-        issuer: "Oracle",
+        issuer: "Coursera",
         date: "Jan 2023",
-        category: "Développement",
-        icon: <FaJava className="text-red-500" />,
+        category: "Développement Web",
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: cssCert
     },
     {
         id: 2,
         title: "Data Science with Python",
         issuer: "Coursera",
         date: "Mar 2023",
-        category: "Data Science",
+        category: "Data",
         icon: <FaPython className="text-green-400" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: Python_data_analysis
     },
     {
         id: 3,
         title: "AWS Solutions Architect",
-        issuer: "Amazon Web Services",
+        issuer: "Coursera",
         date: "Mai 2023",
-        category: "Cloud",
+        category: "Développement Web",
         icon: <FaAws className="text-amber-500" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: html
     },
     {
         id: 4,
         title: "Google Cloud Professional",
-        issuer: "Google",
+        issuer: "Coursera",
         date: "Juil 2023",
-        category: "Cloud",
+        category: "Développement Web",
         icon: <FaGoogle className="text-blue-500" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: ui
     },
     {
         id: 5,
         title: "Cybersecurity Fundamentals",
-        issuer: "Cisco",
+        issuer: "Coursera",
         date: "Sep 2023",
-        category: "Sécurité",
+        category: "Développement Web",
         icon: <MdSecurity className="text-purple-500" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: wordpress
     },
     {
         id: 6,
         title: "Microsoft Azure Administrator",
-        issuer: "Microsoft",
+        issuer: "Coursera",
         date: "Nov 2023",
-        category: "Cloud",
+        category: "Data",
         icon: <FaMicrosoft className="text-blue-400" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: data
     },
     {
         id: 7,
         title: "Web Development Bootcamp",
-        issuer: "Udemy",
+        issuer: "Coursera",
         date: "Déc 2023",
-        category: "Développement",
+        category: "Data",
         icon: <SiUdemy className="text-purple-600" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: Covid
     },
     {
         id: 8,
         title: "Machine Learning Specialization",
         issuer: "Coursera",
         date: "Fév 2024",
-        category: "Data Science",
+        category: "Data",
         icon: <SiCoursera className="text-blue-600" />,
         credentialLink: "#",
-        image: "/api/placeholder/300/200"
+        image: Python_data_structures
     }
 ];
 
@@ -152,23 +162,20 @@ export default function Certificates() {
                     {filteredCertificates.map((cert) => (
                         <div key={cert.id} className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
                             {/* Image du certificat */}
-                            <div className="h-48 overflow-hidden relative">
+                            <div className="h-55 overflow-hidden relative">
                                 <img
                                     src={cert.image}
                                     alt={cert.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
-                                <div className="absolute top-4 right-4 text-3xl">
-                                    {cert.icon}
-                                </div>
+
+
                             </div>
 
                             {/* Contenu du certificat */}
-                            <div className="p-6">
+                            <div className="p-4">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <h3 className="font-semibold text-white text-lg mb-1">{cert.title}</h3>
                                         <p className="text-gray-400 text-sm">{cert.issuer}</p>
                                     </div>
                                     <span className="text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded-full">
@@ -176,27 +183,6 @@ export default function Certificates() {
                                     </span>
                                 </div>
 
-                                <div className="flex justify-between items-center mt-4">
-                                    <span className="text-xs px-2 py-1 rounded-full font-medium"
-                                        style={{
-                                            backgroundColor: `${categoryColors[cert.category]}20`,
-                                            color: categoryColors[cert.category]
-                                        }}
-                                    >
-                                        {cert.category}
-                                    </span>
-                                    <a
-                                        href={cert.credentialLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-400 hover:text-blue-300 text-sm font-medium flex items-center"
-                                    >
-                                        Voir le certificat
-                                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                        </svg>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     ))}

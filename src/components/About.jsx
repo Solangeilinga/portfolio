@@ -128,7 +128,7 @@ export default function About() {
                         <div className="prose prose-lg max-w-none">
                             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                                 Je suis <span className="text-white font-medium">Solange ILINGA</span>, étudiante en Bachelor of Engineering à l'École Centrale Casablanca.
-                                Passionnée par l'informatique, le développement web et la data, j'ai eu l'occasion de réaliser plusieurs projets allant de la création d'applications interactives à la conception de bases de données complètes.
+                                Passionnée par le développement web et la data, j'ai eu l'occasion de réaliser plusieurs projets allant de la création d'applications interactives à la conception de bases de données complètes.
                             </p>
 
                             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
@@ -168,6 +168,8 @@ export default function About() {
                             </blockquote>
                         </div>
                     </div>
+
+
                 </div>
             </div>
 

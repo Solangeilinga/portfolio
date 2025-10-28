@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function ProjectCard({ project }) {
     return (
         <div className="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 transition-transform duration-300">

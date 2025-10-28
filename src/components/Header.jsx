@@ -5,17 +5,19 @@ import { motion } from 'framer-motion'
 const nav = [
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
+    {id: 'experiences',label: 'Expériences'},
     { id: 'skills', label: 'Compétences' },
     { id: 'projects', label: 'Projets' },
     { id: 'certificates', label: 'Certificats' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'contact', label: 'Contact' }
+    
 ]
 
 export default function Header() {
     const [open, setOpen] = useState(false)
     return (
         <motion.header initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed w-full z-30">
-            <div className="backdrop-blur-sm bg-black/40">
+            <div className="backdrop-blur-sm  bg-surface">
                 <div className="container mx-auto px-4 flex items-center justify-between h-16">
                     <a href="#home" className="text-xl font-bold">Solange ILINGA</a>
 
