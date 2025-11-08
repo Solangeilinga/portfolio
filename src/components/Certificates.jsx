@@ -106,7 +106,7 @@ const certificates = [
         credentialLink: "#",
         image: Python_data_structures
     },
-    
+
 
 ];
 

@@ -5,6 +5,7 @@ import socialMediaAnalysis from '../assets/data_analysis.png';
 import benevolatImage from '../assets/benevolat.png';
 import designThinking from '../assets/css.png';
 import portfolio1 from '../assets/portfolio1.png';
+import coiffure from '../assets/coiffure.png'
 
 export const projects = [
     {
@@ -17,6 +18,14 @@ export const projects = [
     },
     {
         id: 3,
+        title: "Site vitrine d'un Salon de Beauty",
+        description: "Projet en équipe pour améliorer l'expérience client dans un restaurant scolaire. Solutions centrées sur l'utilisateur.",
+        tags: ["Développement Web"],
+        image: coiffure,
+        demo: "https://salontemplats.netlify.app/"
+    },
+    {
+        id: 6,
         title: "La conception d'un Porfolio",
         description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
         tags: ["Développement Web"],
@@ -41,6 +50,7 @@ export const projects = [
         demo: "https://solangeilinga.github.io/Quiz/"
 
     },
+
     {
         id: 7,
         title: "Bénévolat (Août 2024)",
@@ -48,6 +58,7 @@ export const projects = [
         tags: ["Bénévolat"],
         image: benevolatImage
     },
+
     {
         id: 8,
         title: "Design Thinking (Février 2024)",

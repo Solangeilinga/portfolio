@@ -67,45 +67,47 @@ export default function Hero() {
     ]
 
     return (
-        <section id="home" className="min-h-screen flex items-center pt-20">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-                <motion.div initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} className="flex-1">
-                    <h1 className="text-4xl md:text-6xl font-extrabold">Hi, je suis <span className="text-indigo-400">Solange ILINGA</span></h1>
-                    <div className="mt-4 text-lg h-8">
+        <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+            {/* Background effects */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-20 right-10 w-80 h-80 bg-fuchsia-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+            </div>
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 relative z-10">
+                <div className="flex-1 text-center md:text-left">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">
+                        Hi, je suis <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">Solange ILINGA</span>
+                    </h1>
+                    <div className="mt-6 text-lg sm:text-xl text-gray-300 h-8">
                         <TypewriterEffect texts={professions} />
                     </div>
-                    <div className="mt-6 flex gap-3">
-                        <a href="#projects" className="px-5 py-2 bg-indigo-500 rounded-md text-white shadow hover:bg-indigo-600">Voir mes projets</a>
-                        <a href="/cv.pdf" className="px-5 py-2 border border-indigo-500 text-indigo-400 rounded-md hover:bg-indigo-500 hover:text-white" download>Télécharger mon CV</a>
+                    <div className="mt-8 flex gap-4 justify-center md:justify-start flex-wrap">
+                        <a href="#projects" className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-lg text-white font-medium shadow-lg hover:shadow-indigo-500/50 hover:scale-105 transition-all duration-300">
+                            Voir mes projets
+                        </a>
+                        <a href="/cv.pdf" className="px-6 py-3 border-2 border-indigo-400 text-indigo-400 rounded-lg hover:bg-indigo-500 hover:text-white hover:border-indigo-500 transition-all duration-300" download>
+                            Télécharger mon CV
+                        </a>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                    initial={{ y: 0, opacity: 1 }}
-                    animate={{ y: [0, -15, 0] }}
-                    transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="relative w-80 h-100 rounded-2xl shadow-2xl overflow-hidden border-4 border-indigo-500"
-                >
-                    {/* Halo animé en boucle */}
-                    <motion.div
-                        className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-indigo-500 to-pink-500 blur-2xl opacity-40"
-                        animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
-                        transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-                    />
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                    {/* Animated halo */}
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-indigo-500 via-violet-500 to-fuchsia-500 blur-2xl opacity-40 animate-pulse" />
 
-                    {/* Image */}
-                    <img
-                        src={profileImage}
-                        alt="Solange ILINGA"
-                        className="w-full h-full object-cover rounded-2xl relative z-10"
-                    />
-                </motion.div>
-
+                    {/* Image placeholder */}
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl bg-gradient-to-br from-indigo-500/20 to-fuchsia-500/20 backdrop-blur-sm">
+                        <div className="absolute inset-0 flex items-center justify-center text-white/50 text-6xl">
+                            <img
+                                src={profileImage}
+                                alt="Solange ILINGA"
+                                className="w-full h-full object-cover rounded-2xl relative z-10"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    )
+    );
 }
