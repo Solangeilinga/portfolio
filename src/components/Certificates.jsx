@@ -12,6 +12,7 @@ import Python_data_structures from '../assets/Python data structures.png';
 import wordpress from '../assets/Wordpress.png';
 import data from '../assets/data_analysis.png';
 import Covid from '../assets/Covid.png';
+import data_engineering from '../assets/data_engineering.png';
 // ... importez toutes vos images
 
 // Données des certificats
@@ -27,6 +28,16 @@ const certificates = [
     },
     {
         id: 2,
+        title: "Data Engineering",
+        issuer: "FORCE N",
+        date: "Juil 2025",
+        category: "Data",
+        icon: <FaGoogle className="text-blue-500" />,
+        credentialLink: "#",
+        image: data_engineering
+    },
+    {
+        id: 3,
         title: "Data Science with Python",
         issuer: "Coursera",
         date: "Mar 2023",
@@ -36,7 +47,7 @@ const certificates = [
         image: Python_data_analysis
     },
     {
-        id: 3,
+        id: 4,
         title: "AWS Solutions Architect",
         issuer: "Coursera",
         date: "Mai 2023",
@@ -46,7 +57,7 @@ const certificates = [
         image: html
     },
     {
-        id: 4,
+        id: 5,
         title: "Google Cloud Professional",
         issuer: "Coursera",
         date: "Juil 2023",
@@ -56,7 +67,7 @@ const certificates = [
         image: ui
     },
     {
-        id: 5,
+        id: 7,
         title: "Cybersecurity Fundamentals",
         issuer: "Coursera",
         date: "Sep 2023",
@@ -76,7 +87,7 @@ const certificates = [
         image: data
     },
     {
-        id: 7,
+        id: 9,
         title: "Web Development Bootcamp",
         issuer: "Coursera",
         date: "Déc 2023",
@@ -94,7 +105,9 @@ const certificates = [
         icon: <SiCoursera className="text-blue-600" />,
         credentialLink: "#",
         image: Python_data_structures
-    }
+    },
+    
+
 ];
 
 // Extraire les catégories uniques à partir des certificats
@@ -115,7 +128,7 @@ export default function Certificates() {
     const filteredCertificates = certificates.filter(cert => cert.category === activeCategory);
 
     return (
-        <section id="certificates" className="py-20 bg-gray-900 relative overflow-hidden">
+        <section id="certificates" className="py-4 bg-gray-900 relative overflow-hidden">
             {/* Arrière-plan avec effets */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />

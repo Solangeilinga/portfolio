@@ -1,18 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Book, FolderOpen, Code2, Rocket } from 'lucide-react';
 
-
-
 const stats = [
     { number: "3+", label: "Années d'études", icon: <Book size={24} /> },
     { number: "15+", label: "Projets réalisés", icon: <FolderOpen size={24} /> },
     { number: "8+", label: "Technologies maîtrisées", icon: <Code2 size={24} /> },
     { number: "100%", label: "Motivation", icon: <Rocket size={24} /> }
 ];
-
-
-
-
 
 const CounterAnimation = ({ end, isVisible }) => {
     const [count, setCount] = useState(0)
@@ -98,7 +92,7 @@ export default function About() {
         <section
             ref={sectionRef}
             id="about"
-            className="py-20 relative overflow-hidden"
+            className="py-20 w-full relative overflow-hidden"
         >
             {/* Arrière-plan subtil */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -106,7 +100,7 @@ export default function About() {
                 <div className="absolute bottom-20 right-20 w-32 h-32 bg-gray-400/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-6xl mx-auto px-6 relative z-10">
                 {/* Titre */}
                 <div className="text-center mb-16">
                     <h2 className={`text-4xl md:text-5xl font-bold text-white mb-4 ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out]' : 'opacity-0'
@@ -121,17 +115,13 @@ export default function About() {
                     {/* Contenu principal - Gauche */}
                     <div className={`${isVisible ? 'animate-[fadeIn_1s_ease-out_0.3s_forwards]' : 'opacity-0'
                         }`}>
-                        <div className="flex items-center space-x-3 mb-8">
-                            <h3 className="text-3xl font-semibold text-white">Bonjour !</h3>
-                        </div>
-
                         <div className="prose prose-lg max-w-none">
-                            <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+                            <p className="text-gray-300 leading-relaxed mb-4 text-lg">
                                 Je suis <span className="text-white font-medium">Solange ILINGA</span>, étudiante en Bachelor of Engineering à l'École Centrale Casablanca.
                                 Passionnée par le développement web et la data, j'ai eu l'occasion de réaliser plusieurs projets allant de la création d'applications interactives à la conception de bases de données complètes.
                             </p>
 
-                            <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+                            <p className="text-gray-300 leading-relaxed mb-4 text-lg">
                                 Je maîtrise notamment React, Python, SQL et Excel, et je dispose d'une solide expérience en gestion de projet grâce à plusieurs certifications internationales.
                             </p>
 
@@ -142,9 +132,8 @@ export default function About() {
                     </div>
 
                     {/* Statistiques - Droite */}
-                    <div className="space-y-8">
-                        <h3 className={`text-2xl font-semibold text-white text-center mb-8 ${isVisible ? 'animate-[fadeIn_1s_ease-out_0.8s_forwards]' : 'opacity-0'
-                            }`}>
+                    <div className="space-y-4">
+                        <h3 className={`text-2xl font-semibold text-white text-center mb-4 ${isVisible ? 'animate-[fadeIn_1s_ease-out_0.8s_forwards]' : 'opacity-0'}`}>
                             En quelques chiffres
                         </h3>
 
@@ -168,8 +157,6 @@ export default function About() {
                             </blockquote>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 

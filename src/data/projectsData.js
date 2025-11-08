@@ -4,25 +4,24 @@ import quizImage from '../assets/quiz.png';
 import socialMediaAnalysis from '../assets/data_analysis.png';
 import benevolatImage from '../assets/benevolat.png';
 import designThinking from '../assets/css.png';
+import portfolio1 from '../assets/portfolio1.png';
 
 export const projects = [
     {
         id: 1,
-        title: "Analyse des posts sur les réseaux sociaux (Septembre 2025)",
-        description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
-        tags: ["Data Analysis"],
-        image: socialMediaAnalysis,
-        repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
-        demo: "https://solangeilinga.github.io/Quiz/"
-
-    },
-    {
-        id: 2,
         title: "Site Vitrine d'une agence digitale",
         description: "Projet d'équipe visant à concevoir un site statique sur la culture, la géographie et l'histoire du Japon. J'ai pris en charge la page culture.",
         tags: ["Développement Web"],
         image: siteVitrine,
         demo: "https://sbureaudigital.netlify.app"
+    },
+    {
+        id: 3,
+        title: "La conception d'un Porfolio",
+        description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
+        tags: ["Développement Web"],
+        image: portfolio1,
+        demo: "https://portfolio32299.wordpress.com/"
     },
     {
         id: 4,
@@ -31,6 +30,16 @@ export const projects = [
         tags: ["Développement Web"],
         image: quizImage,
         demo: "https://solangeilinga.github.io/Quiz/"
+    },
+    {
+        id: 5,
+        title: "Analyse des posts sur les réseaux sociaux (Septembre 2025)",
+        description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
+        tags: ["Data Analysis"],
+        image: socialMediaAnalysis,
+        repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
+        demo: "https://solangeilinga.github.io/Quiz/"
+
     },
     {
         id: 7,

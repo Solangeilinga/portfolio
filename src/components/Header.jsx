@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 const nav = [
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
-    {id: 'experiences',label: 'Expériences'},
+    { id: 'experiences', label: 'Expériences' },
     { id: 'skills', label: 'Compétences' },
     { id: 'projects', label: 'Projets' },
     { id: 'certificates', label: 'Certificats' },
     { id: 'contact', label: 'Contact' }
-    
+
 ]
 
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
         <motion.header initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed w-full z-30">
             <div className="backdrop-blur-sm  bg-surface">
                 <div className="container mx-auto px-4 flex items-center justify-between h-16">
-                    <a href="#home" className="text-xl font-bold">Solange ILINGA</a>
+                    <a href="#home" className="text-xl font-bold">Portfolio</a>
 
                     <nav className="hidden md:flex gap-6">
                         {nav.map(n => <a key={n.id} href={`#${n.id}`} className="hover:text-indigo-400">{n.label}</a>)}

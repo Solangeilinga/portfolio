@@ -25,7 +25,7 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="py-20 bg-gray-900 relative overflow-hidden">
+        <section id="contact" className="py-6 bg-gray-900 relative overflow-hidden">
             {/* Arrière-plan avec effets */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
@@ -65,7 +65,7 @@ export default function Contact() {
 
                         {/* Liens sociaux */}
                         <div className="mt-8">
-                            <h4 className="text-lg font-medium text-white mb-4">Retrouvez-moi sur:</h4>
+                            <h4 className="text-lg font-medium text-white mb-4">Cliquez et Retrouvez-moi sur:</h4>
                             <div className="flex space-x-4">
                                 <a
                                     href="https://linkedin.com/in/solange-ilinga"

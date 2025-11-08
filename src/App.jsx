@@ -12,9 +12,9 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div className="min-h-screen text-slate-100 bg-slate-900">
+    <div className="min-h-screen text-slate-100  bg-slate-900">
       <Header />
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 ">
         <section id="hero">
           <Hero />
         </section>

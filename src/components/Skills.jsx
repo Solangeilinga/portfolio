@@ -9,7 +9,7 @@ import { GrDocumentWord, GrDocumentExcel } from "react-icons/gr"
 import { GrDocument } from "react-icons/gr"
 import { FaChartBar } from "react-icons/fa";
 
-// Organisation simplifiée en 4 catégories principales
+
 const skills = [
     // Développement (fusion Programmation + Dev Web)
     { name: "Python", level: 60, category: "Développement", icon: <FaPython className="text-green-400" /> },
@@ -22,7 +22,6 @@ const skills = [
     { name: "SQL", level: 60, category: "Data & Analytics", icon: <SiMysql className="text-indigo-400" /> },
     { name: "Excel avancé", level: 75, category: "Data & Analytics", icon: <GrDocumentExcel className="text-green-500" /> },
     { name: "Analyse de données", level: 50, category: "Data & Analytics", icon: <BsBarChartLine className="text-blue-300" /> },
-    { name: "Visualisation", level: 50, category: "Data & Analytics", icon: <FaChartBar className="text-yellow-500" /> },
 
     // Gestion de projet & Méthodes (fusion Ingénierie logicielle + Gestion de projet)
     { name: "UML", level: 80, category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
@@ -31,10 +30,10 @@ const skills = [
     { name: "Planification", level: 75, category: "Gestion & Méthodes", icon: <RiTeamLine className="text-red-400" /> },
 
     // Communication & Outils (fusion Outils bureautiques + Communication digitale)
-    { name: "Word", level: 90, category: "Communication & Outils", icon: <GrDocumentWord className="text-blue-600" /> },
-    { name: "PowerPoint", level: 85, category: "Communication & Outils", icon: <GrDocument className="text-orange-500" /> },
-    { name: "Réseaux sociaux", level: 80, category: "Communication & Outils", icon: <FaRegChartBar className="text-blue-400" /> },
-    { name: "Stratégie de contenu", level: 75, category: "Communication & Outils", icon: <SiFigma className="text-pink-500" /> },
+    { name: "Word", level: 90, category: "Communication Digitale & Outils", icon: <GrDocumentWord className="text-blue-600" /> },
+    { name: "PowerPoint", level: 85, category: "Communication Digitale & Outils", icon: <GrDocument className="text-orange-500" /> },
+    { name: "Réseaux sociaux", level: 80, category: "Communication Digitale & Outils", icon: <FaRegChartBar className="text-blue-400" /> },
+    { name: "Stratégie de contenu", level: 75, category: "Communication Digitale & Outils", icon: <SiFigma className="text-pink-500" /> },
 
 ]
 
@@ -42,7 +41,7 @@ const categories = {
     "Développement": "#3B82F6",
     "Data & Analytics": "#8B5CF6",
     "Gestion & Méthodes": "#F59E0B",
-    "Communication & Outils": "#10B981"
+    "Communication Digitale & Outils": "#10B981"
 }
 
 const ProgressBar = ({ level, color, isVisible }) => {
