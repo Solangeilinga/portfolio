@@ -8,116 +8,81 @@ import { RiTeamLine } from "react-icons/ri"
 import { GrDocumentWord, GrDocumentExcel } from "react-icons/gr"
 import { GrDocument } from "react-icons/gr"
 import { FaChartBar } from "react-icons/fa";
-
+import { FaReact, FaGitAlt, FaNodeJs } from "react-icons/fa";
+import { VscCode } from "react-icons/vsc";
 
 const skills = [
-    // Développement (fusion Programmation + Dev Web)
-    { name: "Python", level: 60, category: "Développement", icon: <FaPython className="text-green-400" /> },
-    { name: "JavaScript", level: 65, category: "Développement", icon: <SiJavascript className="text-yellow-400" /> },
-    { name: "HTML", level: 95, category: "Développement", icon: <SiHtml5 className="text-orange-500" /> },
-    { name: "CSS", level: 80, category: "Développement", icon: <SiCss3 className="text-blue-400" /> },
-    { name: "WordPress", level: 50, category: "Développement", icon: <FaWordpress className="text-indigo-400" /> },
+    // Développement 
+    { name: "JavaScript", category: "Développement", icon: <SiJavascript className="text-yellow-400" /> },
+    { name: "HTML", category: "Développement", icon: <SiHtml5 className="text-orange-500" /> },
+    { name: "CSS", category: "Développement", icon: <SiCss3 className="text-blue-400" /> },
+    { name: "WordPress", category: "Développement", icon: <FaWordpress className="text-indigo-400" /> },
+    { name: "React", category: "Développement", icon: <FaReact className="text-blue-400" /> },
+    { name: "VS Code", category: "Développement", icon: <VscCode className="text-blue-400" /> },
+    { name: "Node.js", category: "Développement", icon: <FaNodeJs className="text-green-500" /> },
 
     // Data & Analytics
-    { name: "SQL", level: 60, category: "Data & Analytics", icon: <SiMysql className="text-indigo-400" /> },
-    { name: "Excel avancé", level: 75, category: "Data & Analytics", icon: <GrDocumentExcel className="text-green-500" /> },
-    { name: "Analyse de données", level: 50, category: "Data & Analytics", icon: <BsBarChartLine className="text-blue-300" /> },
+    { name: "Python", category: "Data", icon: <FaPython className="text-green-400" /> },
+    { name: "SQL", category: "Data", icon: <SiMysql className="text-indigo-400" /> },
 
-    // Gestion de projet & Méthodes (fusion Ingénierie logicielle + Gestion de projet)
-    { name: "UML", level: 80, category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
-    { name: "BPMN", level: 70, category: "Gestion & Méthodes", icon: <AiFillCode className="text-pink-400" /> },
-    { name: "Méthodes agiles", level: 80, category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
-    { name: "Planification", level: 75, category: "Gestion & Méthodes", icon: <RiTeamLine className="text-red-400" /> },
+    { name: "Excel avancé", category: "Data", icon: <GrDocumentExcel className="text-green-500" /> },
+    { name: "Analyse de données", category: "Data", icon: <BsBarChartLine className="text-blue-300" /> },
 
-    // Communication & Outils (fusion Outils bureautiques + Communication digitale)
-    { name: "Word", level: 90, category: "Communication Digitale & Outils", icon: <GrDocumentWord className="text-blue-600" /> },
-    { name: "PowerPoint", level: 85, category: "Communication Digitale & Outils", icon: <GrDocument className="text-orange-500" /> },
-    { name: "Réseaux sociaux", level: 80, category: "Communication Digitale & Outils", icon: <FaRegChartBar className="text-blue-400" /> },
-    { name: "Stratégie de contenu", level: 75, category: "Communication Digitale & Outils", icon: <SiFigma className="text-pink-500" /> },
+    // Gestion & Méthodes
+    { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
+    { name: "UML", category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
+    { name: "BPMN", category: "Gestion & Méthodes", icon: <AiFillCode className="text-pink-400" /> },
+    { name: "Méthodes agiles", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
 
+    // Communication & Outils
+    { name: "Word", category: "Communication & Outils", icon: <GrDocumentWord className="text-blue-600" /> },
+    { name: "PowerPoint", category: "Communication & Outils", icon: <GrDocument className="text-orange-500" /> },
+    { name: "Réseaux sociaux", category: "Communication & Outils", icon: <FaRegChartBar className="text-blue-400" /> },
+    { name: "Stratégie de contenu", category: "Communication & Outils", icon: <SiFigma className="text-pink-500" /> },
 ]
 
-const categories = {
-    "Développement": "#3B82F6",
-    "Data & Analytics": "#8B5CF6",
-    "Gestion & Méthodes": "#F59E0B",
-    "Communication Digitale & Outils": "#10B981"
-}
+const categories = [
+    { name: "Développement", color: "from-indigo-500 to-blue-500" },
+    { name: "Data", color: "from-purple-500 to-pink-500" },
+    { name: "Gestion & Méthodes", color: "from-orange-500 to-yellow-500" },
+    { name: "Communication & Outils", color: "from-green-500 to-teal-500" }
+]
 
-const ProgressBar = ({ level, color, isVisible }) => {
-    const [width, setWidth] = useState(0)
-
-    useEffect(() => {
-        if (isVisible) {
-            const timer = setTimeout(() => setWidth(level), 200)
-            return () => clearTimeout(timer)
-        }
-    }, [isVisible, level])
-
+const SkillCard = ({ skill, index, isVisible }) => {
     return (
-        <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-            <div
-                className="h-full rounded-full transition-all duration-1000 ease-out"
-                style={{
-                    width: `${width}%`,
-                    backgroundColor: color,
-                    boxShadow: `0 0 10px ${color}50`
-                }}
-            />
+        <div
+            className={`group bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 ${isVisible ? 'animate-[fadeInUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
+                }`}
+            style={{ animationDelay: `${index * 0.05}s` }}
+        >
+            <div className="flex flex-col items-center text-center space-y-3">
+                <div className="text-3xl transition-transform duration-300 group-hover:scale-110">
+                    {skill.icon}
+                </div>
+                <h3 className="font-medium text-white text-sm">{skill.name}</h3>
+            </div>
         </div>
     )
 }
 
-const SkillCard = ({ skill, index, isVisible }) => {
-    const color = categories[skill.category]
+const CategoryCard = ({ category, categorySkills, index, isVisible }) => {
+    const categoryData = categories.find(c => c.name === category)
 
     return (
         <div
-            className={`group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-gray-700/50 hover:border-gray-600 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-xl sm:hover:shadow-2xl ${isVisible ? 'animate-[slideUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
+            className={`bg-white/5 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'
                 }`}
-            style={{
-                animationDelay: `${index * 0.1}s`,
-                background: `linear-gradient(135deg, rgba(31, 41, 55, 0.8) 0%, rgba(55, 65, 81, 0.4) 100%)`
-            }}
+            style={{ animationDelay: `${index * 0.15}s` }}
         >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+            {/* Header */}
+            <div className="flex items-center gap-3 mb-6">
+                <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${categoryData.color}`} />
+                <h3 className="text-xl md:text-2xl font-semibold text-white">{category}</h3>
 
-            <div className="relative z-10">
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                    <div className="flex items-center space-x-2 sm:space-x-3">
-                        <span className="text-xl sm:text-2xl">{skill.icon}</span>
-                        <div>
-                            <h3 className="font-semibold text-white text-sm sm:text-base">{skill.name}</h3>
-                        </div>
-                    </div>
-                    <span className="text-xl sm:text-2xl font-bold" style={{ color }}>
-                        {skill.level}%
-                    </span>
-                </div>
-
-                <ProgressBar level={skill.level} color={color} isVisible={isVisible} />
             </div>
 
-            <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-1 h-1 bg-blue-400 rounded-full animate-ping" />
-            </div>
-            <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="w-1 h-1 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '0.2s' }} />
-            </div>
-        </div>
-    )
-}
-
-const CategorySection = ({ category, categorySkills, color, index, isVisible }) => {
-    return (
-        <div className={`mb-8 sm:mb-12 ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'}`} style={{ animationDelay: `${index * 0.2}s` }}>
-            <div className="flex items-center mb-4 sm:mb-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mr-3 sm:mr-4">{category}</h3>
-                <div className="flex-1 h-px bg-gradient-to-r from-gray-600 to-transparent" style={{ background: `linear-gradient(to right, ${color}50, transparent)` }}></div>
-                <span className="text-xs sm:text-sm text-gray-400 ml-3 sm:ml-4">{categorySkills.length} compétences</span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+            {/* Skills Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {categorySkills.map((skill, skillIndex) => (
                     <SkillCard
                         key={skill.name}
@@ -142,7 +107,7 @@ export default function Skills() {
                     setIsVisible(true)
                 }
             },
-            { threshold: 0.1 } // Réduit le threshold pour déclencher plus tôt
+            { threshold: 0.1 }
         )
 
         if (sectionRef.current) {
@@ -164,54 +129,41 @@ export default function Skills() {
         <section
             ref={sectionRef}
             id="skills"
-            className="py-12 sm:py-20 relative overflow-hidden"
+            className="min-h-screen py-12 md:py-20 relative overflow-hidden"
         >
-            {/* Arrière-plan avec particules */}
+            {/* Background effects */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-                <div className="absolute top-1/2 left-1/3 w-20 h-20 bg-green-500/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+                <div className="absolute top-40 left-20 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-20 right-20 w-32 h-32 bg-fuchsia-500/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
             </div>
 
-            <div className="container mx-auto px-4 sm:px-6 relative z-10">
-                {/* Titre */}
-                <div className="text-center mb-12 sm:mb-16">
-                    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out]' : 'opacity-0'}`}>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Title */}
+                <div className="text-center mb-12 md:mb-16">
+                    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'
+                        }`}>
                         Mes compétences
                     </h2>
-                    <div className={`w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-8 ${isVisible ? 'animate-[expandWidth_1s_ease-out_0.5s_forwards]' : 'w-0'}`} />
+                    <div className={`w-24 h-1 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500 mx-auto rounded-full transition-all duration-1000 ${isVisible ? 'w-24' : 'w-0'
+                        }`} />
                 </div>
 
-                {/* Contenu par catégories */}
-                <div className="space-y-10 sm:space-y-16">
+                {/* Categories */}
+                <div className="space-y-8">
                     {Object.entries(groupedSkills).map(([category, categorySkills], index) => (
-                        <CategorySection
+                        <CategoryCard
                             key={category}
                             category={category}
                             categorySkills={categorySkills}
-                            color={categories[category]}
                             index={index}
                             isVisible={isVisible}
                         />
                     ))}
                 </div>
-
-                {/* Légende des catégories */}
-                <div className="mt-12 sm:mt-16 flex flex-wrap justify-center gap-2 sm:gap-4">
-                    {Object.entries(categories).map(([category, color]) => (
-                        <div key={category} className="flex items-center space-x-2 bg-gray-800/50 px-3 py-1 sm:px-4 sm:py-2 rounded-full border border-gray-700">
-                            <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full" style={{ backgroundColor: color }}></div>
-                            <span className="text-xs sm:text-sm text-gray-300">{category}</span>
-                            <span className="text-xs text-gray-500">
-                                ({groupedSkills[category]?.length || 0})
-                            </span>
-                        </div>
-                    ))}
-                </div>
             </div>
 
-            <style jsx>{`
-                @keyframes slideUp {
+            <style>{`
+                @keyframes fadeInUp {
                     from {
                         opacity: 0;
                         transform: translateY(20px);
@@ -220,22 +172,6 @@ export default function Skills() {
                         opacity: 1;
                         transform: translateY(0);
                     }
-                }
-
-                @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(15px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes expandWidth {
-                    from { width: 0; }
-                    to { width: 6rem; }
                 }
             `}</style>
         </section>

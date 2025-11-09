@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
                         rel="noopener noreferrer"
                         className="px-3 py-1 text-sm bg-indigo-500 text-white rounded-md hover:bg-indigo-600"
                     >
-                        Code
+                        Repo
                     </a>
                 )}
                 {project.demo && (

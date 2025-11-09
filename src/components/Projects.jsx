@@ -22,7 +22,7 @@ export default function Projects() {
                     <button
                         key={t}
                         onClick={() => setFilter(t)}
-                        className={`px-3 py-1 rounded ${filter === t ? 'bg-indigo-500 text-white' : 'bg-slate-700 text-gray-300'
+                        className={`px-3 py-1 rounded ${filter === t ? 'bg-indigo-500  text-white' : 'bg-slate-700 text-gray-300'
                             }`}
                     >
                         {t}

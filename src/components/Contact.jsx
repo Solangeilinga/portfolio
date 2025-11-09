@@ -133,7 +133,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={sending}
-                                className="w-full bg-blue-600 hover:blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                                className="w-full border-2 border-indigo-400 hover:bg-indigo-500 hover:text-white hover:border-indigo-500 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 {sending ? (
                                     <>

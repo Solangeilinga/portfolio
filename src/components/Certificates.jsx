@@ -155,7 +155,7 @@ export default function Certificates() {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-4 py-2 rounded-full transition-all duration-300 flex items-center ${activeCategory === category
-                                ? 'bg-gray-800 text-white shadow-lg'
+                                ? 'bg-indigo-500 text-white shadow-lg'
                                 : 'bg-gray-700 text-gray-300 hover:bg-gray-600'}`}
                             style={activeCategory === category ? {
                                 borderLeft: `4px solid ${categoryColors[category]}`,
@@ -163,9 +163,7 @@ export default function Certificates() {
                             } : {}}
                         >
                             <span className="mr-2">{category}</span>
-                            <span className="text-xs bg-gray-600 px-2 py-1 rounded-full">
-                                {certificates.filter(cert => cert.category === category).length}
-                            </span>
+
                         </button>
                     ))}
                 </div>
@@ -191,6 +189,7 @@ export default function Certificates() {
                                     <div>
                                         <p className="text-gray-400 text-sm">{cert.issuer}</p>
                                     </div>
+
                                     <span className="text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded-full">
                                         {cert.date}
                                     </span>
