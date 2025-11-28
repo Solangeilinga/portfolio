@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-padding {
+    /* Padding commun pour toutes les sections majeures */
+    @apply py-12 md:py-24;
+  }
+}
+
+html { scroll-behavior: smooth; }
+body { background-color: #0f172a;
+font-family: 'Inter', sans-serif; }
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+
+
+header {
+  background-color: rgba(30, 41, 59, 0.8); /* #1e293b avec opacité */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer {
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+}
