@@ -17,7 +17,7 @@ const experiences = [
         company: "KPB Education",
         location: "Distance",
         period: "Juin 2025 - Septembre 2025",
-        description: "Création d'un site statique sur le Japon.",
+        description: "Gestion et animationdes réseaux sociaux.",
         skills: ["Sprout", "ManyChat", "HootSuite", "AgoraPulse"]
     }
 ];
