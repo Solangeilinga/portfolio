@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://solangeilinga.github.io/portfolio/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "netlify deploy --prod --dir=dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
