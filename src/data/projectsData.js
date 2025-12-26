@@ -1,12 +1,11 @@
 // Import des images depuis assets
 import siteVitrine from '../assets/site_vitrine.png';
 import quizImage from '../assets/quiz.png';
-import socialMediaAnalysis from '../assets/data_analysis.png';
 import benevolatImage from '../assets/benevolat.png';
-import designThinking from '../assets/css.png';
 import portfolio1 from '../assets/portfolio1.png';
 import coiffure from '../assets/coiffure.png'
 import figure from '../assets/Figure_2.png'
+import excel from '../assets/excel.png'
 import covid19 from '../assets/covid19.png'
 
 export const projects = [
@@ -39,16 +38,16 @@ export const projects = [
     },
     {
         id: 4,
-        title: "Quiz interactif avancé (Février 2025)",
+        title: "Quiz interactif avancé (Fev 2025)",
         description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
         tags: ["Développement Web"],
-        Technologies: ["React"],
+        Technologies: ["Javascript","Html", "Css"],
         image: quizImage,
         demo: "https://solangeilinga.github.io/Quiz/"
     },
     {
         id: 5,
-        title: "Analyse des posts sur les réseaux sociaux (Septembre 2025)",
+        title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
         description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
         tags: ["Data Analysis"],
         image: figure,
@@ -57,8 +56,20 @@ export const projects = [
 
     },
     {
+        id: 9,
+        title: "Analyse du Churn Client (Sept 2025)",
+        description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
+        tags: ["Data Analysis"],
+        image: excel,
+        Technologies: ["Excel"],
+        repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
+
+    },
+    
+    
+    {
         id: 8,
-        title: "Analyse de données COVID-19 et indicateurs socio-économiques (Décembre 2025)",
+        title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
         image: covid19,
@@ -71,7 +82,7 @@ export const projects = [
         id: 7,
         title: "Bénévolat (Août 2024)",
         description: "Organisation d'une journée pour les enfants déplacés internes. Développement de compétences en organisation et communication.",
-        tags: ["Bénévolat"],
+        tags: ["Gestion de Projet"],
         Technologies: ["Gestion de Projet"],
         image: benevolatImage
     }
