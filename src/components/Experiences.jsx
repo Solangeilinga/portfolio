@@ -17,7 +17,7 @@ const experiences = [
         company: "KPB Education",
         location: "Distance",
         period: "Juin 2025 - Septembre 2025",
-        description: "Gestion et animationdes réseaux sociaux",
+        description: "Gestion et animation des réseaux sociaux",
         skills: ["Sprout", "ManyChat", "HootSuite", "AgoraPulse"]
     }
 ];
@@ -32,7 +32,7 @@ const Experiences = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                        Mes Expériences
+                        Mes Expériences Professionnelles
                     </h2>
                     <div className="w-24 h-1 bg-blue-500 gradient-to-r from-blue-500 to-indigo-400 mx-auto rounded-full"></div>
                 </div>

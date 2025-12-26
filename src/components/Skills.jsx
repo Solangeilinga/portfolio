@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { FaJava, FaPython, FaProjectDiagram, FaWordpress, FaRegChartBar } from "react-icons/fa"
-import { SiCplusplus, SiJavascript, SiHtml5, SiCss3, SiFigma, SiMysql } from "react-icons/si"
+import { FaPython, FaProjectDiagram, FaWordpress} from "react-icons/fa"
+import { SiJavascript, SiHtml5, SiCss3, SiMysql } from "react-icons/si"
 import { MdOutlineModelTraining } from "react-icons/md"
 import { AiFillCode } from "react-icons/ai"
-import { BsBarChartLine } from "react-icons/bs"
-import { RiTeamLine } from "react-icons/ri"
-import { GrDocumentWord, GrDocumentExcel } from "react-icons/gr"
-import { GrDocument } from "react-icons/gr"
-import { FaChartBar } from "react-icons/fa";
+import { GrDocumentExcel } from "react-icons/gr"
 import { FaReact, FaGitAlt, FaNodeJs } from "react-icons/fa";
 import { VscCode } from "react-icons/vsc";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaPenAlt } from "react-icons/fa";
+import { SiGoogleanalytics } from "react-icons/si";
+import { SiHootsuite } from "react-icons/si";
+import { FaLightbulb } from "react-icons/fa6";
+
 const skills = [
     // Développement 
     { name: "JavaScript", category: "Développement Web", icon: <SiJavascript className="text-yellow-400" /> },
@@ -19,31 +20,32 @@ const skills = [
     { name: "TailWind", category: "Développement Web", icon: <RiTailwindCssFill className="text-blue-400" /> },
     { name: "WordPress", category: "Développement Web", icon: <FaWordpress className="text-indigo-400" /> },
     { name: "React", category: "Développement Web", icon: <FaReact className="text-blue-400" /> },
-    { name: "VS Code", category: "Développement Web", icon: <VscCode className="text-blue-400" /> },
     { name: "Node.js", category: "Développement Web", icon: <FaNodeJs className="text-green-500" /> },
 
     // Data & Analytics
-    { name: "Python", category: "Data Analysis", icon: <FaPython className="text-green-400" /> },
-    { name: "SQL", category: "Data Analysis", icon: <SiMysql className="text-indigo-400" /> },
+    { name: "Python", category: "Data & Analytics", icon: <FaPython className="text-green-400" /> },
+    { name: "MySQL", category: "Data & Analytics", icon: <SiMysql className="text-indigo-400" /> },
+    { name: "Excel avancé ", category: "Data & Analytics", icon: <GrDocumentExcel className="text-green-500" /> },
 
-    { name: "Excel avancé ", category: "Data Analysis", icon: <GrDocumentExcel className="text-green-500" /> },
+    
 
     // Gestion & Méthodes
     { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
     { name: "UML", category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
     { name: "BPMN", category: "Gestion & Méthodes", icon: <AiFillCode className="text-pink-400" /> },
-    { name: "Méthodes agiles", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
+    { name: "Gestion de projet Agile", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
+    { name: "Design Thinking", category: "Gestion & Méthodes", icon: <FaLightbulb className="text-yellow-500" /> }, // Exemple
 
     // Communication & Outils
-    { name: "Word", category: "Communication & Outils", icon: <GrDocumentWord className="text-blue-600" /> },
-    { name: "PowerPoint", category: "Communication & Outils", icon: <GrDocument className="text-orange-500" /> },
-    { name: "Réseaux sociaux", category: "Communication & Outils", icon: <FaRegChartBar className="text-blue-400" /> },
-    { name: "Stratégie de contenu", category: "Communication & Outils", icon: <SiFigma className="text-pink-500" /> },
+    { name: "VS Code", category: "Communication & Outils", icon: <VscCode className="text-blue-400" /> },
+    { name: "Hootsuite", category: "Communication & Outils", icon: <SiHootsuite className="text-red-500" /> },
+    { name: "Google Analytics", category: "Communication & Outils", icon: <SiGoogleanalytics className="text-orange-500" /> },
+    { name: "Stratégie de contenu", category: "Communication & Outils", icon: <FaPenAlt className="text-pink-500" /> },
 ]
 
 const categories = [
     { name: "Développement Web", color: "from-indigo-500 to-blue-500" },
-    { name: "Data Analysis", color: "from-purple-500 to-pink-500" },
+    { name: "Data & Analytics", color: "from-purple-500 to-pink-500" },
     { name: "Gestion & Méthodes", color: "from-orange-500 to-yellow-500" },
     { name: "Communication & Outils", color: "from-green-500 to-teal-500" }
 ]
