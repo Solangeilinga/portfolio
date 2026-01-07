@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { FaPython, FaProjectDiagram, FaWordpress} from "react-icons/fa"
+import { FaPython, FaProjectDiagram, FaWordpress } from "react-icons/fa"
 import { SiJavascript, SiHtml5, SiCss3, SiMysql } from "react-icons/si"
 import { MdOutlineModelTraining } from "react-icons/md"
 import { AiFillCode } from "react-icons/ai"
@@ -11,6 +11,7 @@ import { FaPenAlt } from "react-icons/fa";
 import { SiGoogleanalytics } from "react-icons/si";
 import { SiHootsuite } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa6";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const skills = [
     // Développement 
@@ -25,9 +26,10 @@ const skills = [
     // Data & Analytics
     { name: "Python", category: "Data & Analytics", icon: <FaPython className="text-green-400" /> },
     { name: "MySQL", category: "Data & Analytics", icon: <SiMysql className="text-indigo-400" /> },
+    { name: "PostgreSQL", category: "Data & Analytics", icon: <BiLogoPostgresql className="text-indigo-400" /> },
     { name: "Excel avancé ", category: "Data & Analytics", icon: <GrDocumentExcel className="text-green-500" /> },
 
-    
+
 
     // Gestion & Méthodes
     { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
