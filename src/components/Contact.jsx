@@ -35,7 +35,7 @@ export default function Contact() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact</h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-8" />
+                    <div className="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-8" />
                     <p className="text-gray-400 max-w-2xl mx-auto">
                         N'hésitez pas à me contacter pour discuter de projets ou d'opportunités.
                     </p>

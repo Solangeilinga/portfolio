@@ -1,7 +1,6 @@
 // Import des images depuis assets
 import siteVitrine from '../assets/site_vitrine.png';
 import quizImage from '../assets/quiz.png';
-import benevolatImage from '../assets/benevolat.png';
 import portfolio1 from '../assets/portfolio1.png';
 import coiffure from '../assets/coiffure.png'
 import figure from '../assets/Figure_2.png'
@@ -41,7 +40,7 @@ export const projects = [
         title: "Quiz interactif avancé (Fev 2025)",
         description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
         tags: ["Développement Web"],
-        Technologies: ["Javascript","Html", "Css"],
+        Technologies: ["Javascript", "Html", "Css"],
         image: quizImage,
         demo: "https://solangeilinga.github.io/Quiz/"
     },
@@ -65,8 +64,8 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
 
     },
-    
-    
+
+
     {
         id: 8,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
@@ -76,14 +75,5 @@ export const projects = [
         Technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
         repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
 
-    },
-
-    {
-        id: 7,
-        title: "Bénévolat (Août 2024)",
-        description: "Organisation d'une journée pour les enfants déplacés internes. Développement de compétences en organisation et communication.",
-        tags: ["Gestion de Projet"],
-        Technologies: ["Gestion de Projet"],
-        image: benevolatImage
     }
 ];

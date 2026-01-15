@@ -40,7 +40,7 @@ const certificates = [
         color: "#FFFFFF"
     },
 
-    
+
     {
         id: 12,
         title: "Understanding Cloud Computing",
@@ -51,7 +51,7 @@ const certificates = [
         credentialLink: "https://www.datacamp.com/completed/statement-of-accomplishment/course/75d80ed637aef9ca030ba52c7b84d4040adc645c",
         color: "#3AC65A"
     },
-    
+
     {
         id: 4,
         title: "Introduction to HTML5",
@@ -128,7 +128,7 @@ const certificates = [
         credentialLink: "https://certification.gestiondeprojet.pm/GdP23AP2/GdP23PA-ILJVDVDKA.pdf",
         color: "#FFFFFF"
     },
-    
+
     {
         id: 11,
         title: "Intelligence Artificielle pour tous",
@@ -177,7 +177,7 @@ export default function Certificates() {
                 {/* En-tête */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        Mes <span className="text-blue-500">Certifications</span>
+                        Mes <span className="text-white">Certifications</span>
                     </h2>
                     <div className="w-24 h-1 bg-blue-500 mx-auto mb-8 rounded-full" />
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg">

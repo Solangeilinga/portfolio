@@ -7,42 +7,55 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Certificates from './components/Certificates'
-import Experiences from "./components/Experiences";
-import "./index.css";
-import { SectionDivider } from './components/SectionDivider';
+import Experiences from "./components/Experiences"
+import AnimatedSection from './components/AnimatedSection'
+import { SectionDivider } from './components/SectionDivider'
+import "./index.css"
 
 export default function App() {
   return (
-    <div className="min-h-screen text-slate-100  bg-slate-900">
+    <div className="min-h-screen text-slate-100 bg-slate-900">
       <Header />
-      <main className="container mx-auto px-4 ">
-        <section id="hero">
+      <main className="container mx-auto px-4">
+        <AnimatedSection id="hero">
           <Hero />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="about">
+
+        <AnimatedSection id="about">
           <About />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="experiences">
+
+        <AnimatedSection id="experiences">
           <Experiences />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="skills">
+
+        <AnimatedSection id="skills">
           <Skills />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="projects">
+
+        <AnimatedSection id="projects">
           <Projects />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="certificates">
+
+        <AnimatedSection id="certificates">
           <Certificates />
-        </section>
+        </AnimatedSection>
+
         <SectionDivider variant="default" />
-        <section id="contact">
+
+        <AnimatedSection id="contact">
           <Contact />
-        </section>
+        </AnimatedSection>
       </main>
       <Footer />
     </div>
