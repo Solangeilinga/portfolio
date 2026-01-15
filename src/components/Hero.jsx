@@ -60,6 +60,7 @@ export default function Hero() {
 
     return (
         <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Centered content */}
                 <div className="max-w-5xl mx-auto">

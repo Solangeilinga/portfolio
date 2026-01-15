@@ -12,6 +12,7 @@ import { SiGoogleanalytics } from "react-icons/si";
 import { SiHootsuite } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
+import FadeIn from './FadeIn';
 
 const skills = [
     // Développement 
@@ -54,18 +55,20 @@ const categories = [
 
 const SkillCard = ({ skill, index, isVisible }) => {
     return (
-        <div
-            className={`group bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 ${isVisible ? 'animate-[fadeInUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
-                }`}
-            style={{ animationDelay: `${index * 0.05}s` }}
-        >
-            <div className="flex flex-col items-center text-center space-y-3">
-                <div className="text-3xl transition-transform duration-300 group-hover:scale-110">
-                    {skill.icon}
+        <FadeIn>
+            <div
+                className={`group bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 ${isVisible ? 'animate-[fadeInUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
+                    }`}
+                style={{ animationDelay: `${index * 0.05}s` }}
+            >
+                <div className="flex flex-col items-center text-center space-y-3">
+                    <div className="text-3xl transition-transform duration-300 group-hover:scale-110">
+                        {skill.icon}
+                    </div>
+                    <h3 className="font-medium text-white text-sm">{skill.name}</h3>
                 </div>
-                <h3 className="font-medium text-white text-sm">{skill.name}</h3>
             </div>
-        </div>
+        </FadeIn>
     )
 }
 
