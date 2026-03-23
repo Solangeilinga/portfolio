@@ -1,50 +1,53 @@
 import React from "react";
 import { LuExternalLink } from "react-icons/lu";
 
-
 export default function ProjectCard({ project }) {
     return (
-        <div className="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="bg-white border-2 border-[#1a1264] rounded-xl p-4 shadow-md hover:shadow-[8px_8px_0px_0px_rgba(26,18,100,1)] transition-all duration-300 hover:-translate-y-1">
             {/* Image illustrative */}
             {project.image && (
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="rounded-lg mb-4 w-full h-40 object-cover"
+                    className="rounded-lg mb-4 w-full h-40 object-cover border border-[#1a1264]/10"
                 />
             )}
 
-            {/* Titre */}
-            <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+            {/* Titre en Bleu Profond */}
+            <h3 className="text-xl font-black text-[#1a1264] mb-2 uppercase tracking-tight">
+                {project.title}
+            </h3>
 
             {/* Description */}
-            <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+            <p className="text-[#1a1264]/80 text-sm mb-4 font-medium leading-snug">
+                {project.description}
+            </p>
 
-            {/* Tags/Technologies (Ajout) */}
+            {/* Tags/Technologies : Suppression du dégradé, passage en aplat uni */}
             {project.Technologies && project.Technologies.length > 0 && (
-                <div className="flex flex-wrap gap-2 mb-4">
-                    {project.Technologies.map((Technologies, idx) => (
+                <div className="flex flex-wrap gap-2 mb-6">
+                    {project.Technologies.map((tech, idx) => (
                         <span
                             key={idx}
-                            className="px-3 py-1 bg-gradient-to-r from-indigo-500/20 to-violet-500/20 text-indigo-200 rounded-full text-xs font-medium border border-indigo-400/30 hover:border-indigo-400 transition-colors whitespace-nowrap"
+                            className="px-3 py-1 bg-[#ebebdf] text-[#1a1264] rounded-md text-[10px] font-black uppercase border border-[#1a1264] whitespace-nowrap"
                         >
-                            {Technologies}
+                            {tech}
                         </span>
                     ))}
                 </div>
             )}
 
-            {/* Liens */}
+            {/* Liens : Boutons unis en Bleu Profond */}
             <div className="flex gap-3">
                 {project.repo && (
                     <a
                         href={project.repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 px-6 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                        className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-[#1a1264] text-[#ebebdf] rounded-lg hover:opacity-90 transition-opacity"
                     >
-                        Repo
-                        <LuExternalLink size={16} />
+                        REPO
+                        <LuExternalLink size={14} />
                     </a>
                 )}
                 {project.demo && (
@@ -52,10 +55,10 @@ export default function ProjectCard({ project }) {
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 px-6 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                        className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-[#1a1264] text-[#ebebdf] rounded-lg hover:opacity-90 transition-opacity"
                     >
-                        Démo
-                        <LuExternalLink size={16} />
+                        DÉMO
+                        <LuExternalLink size={14} />
                     </a>
                 )}
             </div>

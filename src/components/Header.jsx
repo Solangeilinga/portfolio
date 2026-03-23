@@ -19,7 +19,7 @@ export default function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const sections = nav.map(n => document.getElementById(n.id))
-            const scrollPosition = window.scrollY + 100 // Offset pour le header
+            const scrollPosition = window.scrollY + 100
 
             for (let i = sections.length - 1; i >= 0; i--) {
                 const section = sections[i]
@@ -31,54 +31,71 @@ export default function Header() {
         }
 
         window.addEventListener('scroll', handleScroll)
-        handleScroll() // Vérifier la position initiale
-
+        handleScroll()
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
     return (
-        <motion.header initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed w-full z-30">
-            <div className="backdrop-blur-sm bg-surface">
+        <motion.header 
+            initial={{ y: -20, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            className="fixed w-full z-50 border-b-2 border-[#ebebdf]/10"
+        >
+            {/* Fond Bleu Profond pour le Header */}
+            <div className="bg-[#1a1264]">
                 <div className="container mx-auto px-4 flex items-center justify-between h-16">
-                    <a href="#home" className="text-xl font-bold bg-blue-500 bg-clip-text text-transparent">
+                    {/* Logo en Crème */}
+                    <a href="#home" className="text-xl font-bold text-[#ebebdf] hover:opacity-80 transition-opacity">
                         Solange ILINGA
                     </a>
 
-                    <nav className="hidden md:flex gap-6">
+                    {/* Desktop Navigation */}
+                    <nav className="hidden md:flex gap-8">
                         {nav.map(n => (
                             <a
                                 key={n.id}
                                 href={`#${n.id}`}
-                                className={`transition-all duration-300 ${activeSection === n.id
-                                    ? 'text-blue-500 font-semibold'
-                                    : 'text-white hover:text-blue-500'
-                                    }`}
+                                className={`relative transition-all duration-300 text-sm font-bold uppercase tracking-wider ${
+                                    activeSection === n.id
+                                    ? 'text-[#ebebdf]'
+                                    : 'text-[#ebebdf]/60 hover:text-[#ebebdf]'
+                                }`}
                             >
                                 {n.label}
                                 {activeSection === n.id && (
-                                    <div className="h-0.5 bg-blue-500 rounded-full mt-1" />
+                                    <motion.div 
+                                        layoutId="activeTab"
+                                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#ebebdf]" 
+                                    />
                                 )}
                             </a>
                         ))}
                     </nav>
 
-                    <button className="md:hidden text-white" onClick={() => setOpen(!open)} aria-label="Menu">
+                    {/* Mobile Menu Button - Couleur Crème */}
+                    <button 
+                        className="md:hidden text-[#ebebdf]" 
+                        onClick={() => setOpen(!open)} 
+                        aria-label="Menu"
+                    >
                         {open ? <X /> : <Menu />}
                     </button>
                 </div>
 
+                {/* Mobile Navigation */}
                 {open && (
-                    <div className="md:hidden bg-slate-800 border-t border-gray-700">
-                        <div className="flex flex-col items-center py-4">
+                    <div className="md:hidden bg-[#1a1264] border-t border-[#ebebdf]/10">
+                        <div className="flex flex-col items-center py-6">
                             {nav.map(n => (
                                 <a
                                     key={n.id}
                                     href={`#${n.id}`}
                                     onClick={() => setOpen(false)}
-                                    className={`py-3 w-full text-center transition-all duration-300 ${activeSection === n.id
-                                        ? 'text-indigo-400 font-semibold bg-indigo-500/10'
-                                        : 'text-gray-300 hover:text-indigo-400 hover:bg-gray-700/50'
-                                        }`}
+                                    className={`py-4 w-full text-center text-sm font-bold uppercase tracking-widest transition-all duration-300 ${
+                                        activeSection === n.id
+                                        ? 'text-[#1a1264] bg-[#ebebdf]'
+                                        : 'text-[#ebebdf] hover:bg-white/5'
+                                    }`}
                                 >
                                     {n.label}
                                 </a>
