@@ -4,32 +4,57 @@
 
 @layer components {
   .section-padding {
-    /* Padding commun pour toutes les sections majeures */
+    /* Garde votre structure intacte */
     @apply py-12 md:py-24;
   }
 }
 
-html { scroll-behavior: smooth; } 
-body { background-color: #0f172a;
-font-family: 'Inter', sans-serif; }
+html { 
+  scroll-behavior: smooth; 
+} 
+
+body { 
+  /* Passage au fond clair (Crème) */
+  background-color: #ebebdf;
+  /* Utilisation de la police Inter pour tout le corps */
+  font-family: 'Inter', sans-serif; 
+  /* Couleur de texte par défaut en bleu profond pour la lisibilité */
+  color: #1a1264;
+}
+
 h1, h2 {
+  /* Conservation de Playfair Display pour l'élégance, mais en bleu profond */
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+  color: #1a1264;
 }
 
 h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
+  color: #1a1264;
 }
-
-
 
 header {
-  background-color: rgba(30, 41, 59, 0.8); /* #1e293b avec opacité */
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Suppression de la transparence et du flou pour un aplat net */
+  background-color: #ebebdf; 
+  /* Bordure nette en bleu profond au lieu de translucide */
+  border-bottom: 2px solid #1a1264;
 }
+
 footer {
-  background-color: #1e293b;
-  border-top: 1px solid #334155;
+  /* Inversion pour le footer : fond bleu profond, texte crème */
+  background-color: #1a1264;
+  color: #ebebdf;
+  border-top: none;
+}
+
+/* Ajustement pour les liens du header pour qu'ils soient visibles sur le crème */
+header a {
+  color: #ebebdf;
+  transition: opacity 0.3s ease;
+}
+
+header a:hover {
+  opacity: 0.7;
 }

@@ -45,7 +45,8 @@ const TypewriterEffect = ({ texts }) => {
     return (
         <span>
             {displayText}
-            <span className="animate-pulse text-indigo-400">|</span>
+            {/* Le curseur passe en bleu profond */}
+            <span className="animate-pulse text-[#1a1264]">|</span>
         </span>
     )
 }
@@ -59,19 +60,19 @@ export default function Hero() {
     ]
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        // Fond principal : brandCream (#ebebdf)
+        <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden bg-[#ebebdf]">
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Centered content */}
                 <div className="max-w-5xl mx-auto">
-                    {/* Profile image */}
+                    {/* Profile image section */}
                     <div className="flex justify-center mb-12">
                         <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
-                            {/* Animated halo */}
-                            <div className="absolute inset-0 rounded-full bg-blue-500 blur-2xl opacity-50 animate-pulse" />
+                            {/* Halo supprimé ou remplacé par une bordure nette pour éviter le dégradé/flou */}
+                            <div className="absolute inset-0 rounded-full border-2 border-[#1a1264] opacity-20" />
 
-                            {/* Image */}
-                            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/20 shadow-2xl bg-blue-500 backdrop-blur-sm">
+                            {/* Image avec bordure brandBlue (#1a1264) */}
+                            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#1a1264] shadow-xl bg-white">
                                 <img
                                     src={profileImage}
                                     alt="Solange ILINGA"
@@ -83,39 +84,43 @@ export default function Hero() {
 
                     {/* Text content */}
                     <div className="text-center">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#1a1264] leading-tight mb-6">
                             Hi, je suis <br className="sm:hidden" />
-                            <span className="bg-blue-500 bg-clip-text text-transparent">
+                            {/* Suppression du texte transparent/gradient au profit du brandBlue uni */}
+                            <span className="text-[#1a1264]">
                                 Solange ILINGA
                             </span>
                         </h1>
 
-                        <div className="mt-6 text-xl sm:text-2xl text-gray-300 min-h-[2rem] flex justify-center items-center">
+                        {/* Texte du typewriter en bleu profond */}
+                        <div className="mt-6 text-xl sm:text-2xl text-[#1a1264]/80 min-h-[2rem] flex justify-center items-center font-medium">
                             <TypewriterEffect texts={professions} />
                         </div>
 
-                        {/* Buttons */}
+                        {/* Buttons : Pas de dégradé, aplats de couleurs nets */}
                         <div className="mt-10 flex gap-4 justify-center flex-wrap">
                             <a
                                 href="#projects"
-                                className="group relative px-6 py-3 bg-blue-600 rounded-lg font-semibold text-white text-base shadow-lg hover:to-blue-700 transition-all duration-300 hover:scale-105 overflow-hidden"
+                                className="group relative px-6 py-3 bg-[#1a1264] rounded-lg font-semibold text-[#ebebdf] text-base shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden"
                             >
                                 <span className="relative z-10">Voir mes projets</span>
-                                <div className="absolute inset-0 bg-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                {/* Effet de survol uni */}
+                                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </a>
+                            
                             <a
                                 href="cv.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative px-6 py-3 bg-blue-600 rounded-lg font-semibold text-white text-base shadow-lg hover:to-blue-700 transition-all duration-300 hover:scale-105 overflow-hidden"
-
+                                className="group relative px-6 py-3 bg-[#1a1264] rounded-lg font-semibold text-[#ebebdf] text-base shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
                                     Télécharger mon CV
-                                    <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform  bg-blue-600 hover:to-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
                                 </span>
+                                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </a>
                         </div>
                     </div>

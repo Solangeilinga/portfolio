@@ -14,8 +14,15 @@ import "./index.css"
 
 export default function App() {
   return (
-    <div className="min-h-screen text-slate-100 bg-slate-900">
+    // Remplacement : text-slate-100 -> text-[#1a1264] 
+    // Remplacement : bg-slate-900 -> bg-[#ebebdf]
+    <div className="min-h-screen text-[#1a1264] bg-[#ebebdf] pb-20">
       <Header />
+      
+      {/* Note : 'container mx-auto' centre le contenu. 
+          Assurez-vous que vos composants internes n'utilisent plus 
+          de fonds sombres pour ne pas créer de cassures visuelles.
+      */}
       <main className="container mx-auto px-4">
         <AnimatedSection id="hero">
           <Hero />
@@ -57,6 +64,7 @@ export default function App() {
           <Contact />
         </AnimatedSection>
       </main>
+
       <Footer />
     </div>
   )

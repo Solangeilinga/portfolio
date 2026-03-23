@@ -13,59 +13,71 @@ import { SiHootsuite } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import FadeIn from './FadeIn';
+import { SiNextdotjs, SiExpress, SiSequelize, SiMongodb } from "react-icons/si";
+import { FaServer } from "react-icons/fa";
+import { FaChartBar } from "react-icons/fa";
+import { SiPandas, SiNumpy,SiScikitlearn, SiPlotly, SiGooglecolab , SiApachehadoop } from "react-icons/si";
 
 const skills = [
-    // Développement 
-    { name: "JavaScript", category: "Développement Web", icon: <SiJavascript className="text-yellow-400" /> },
-    { name: "HTML", category: "Développement Web", icon: <SiHtml5 className="text-orange-500" /> },
-    { name: "CSS", category: "Développement Web", icon: <SiCss3 className="text-blue-400" /> },
-    { name: "TailWind", category: "Développement Web", icon: <RiTailwindCssFill className="text-blue-400" /> },
-    { name: "WordPress", category: "Développement Web", icon: <FaWordpress className="text-indigo-400" /> },
-    { name: "React", category: "Développement Web", icon: <FaReact className="text-blue-400" /> },
-    { name: "Node.js", category: "Développement Web", icon: <FaNodeJs className="text-green-500" /> },
+    // Développement Web
+{ name: "JavaScript", category: "Développement Web", icon: <SiJavascript className="text-yellow-400" /> },
+{ name: "HTML", category: "Développement Web", icon: <SiHtml5 className="text-orange-500" /> },
+{ name: "CSS", category: "Développement Web", icon: <SiCss3 className="text-blue-400" /> },
+{ name: "Tailwind CSS", category: "Développement Web", icon: <RiTailwindCssFill className="text-blue-400" /> },
+{ name: "WordPress", category: "Développement Web", icon: <FaWordpress className="text-indigo-400" /> },
+{ name: "React", category: "Développement Web", icon: <FaReact className="text-blue-400" /> },
+{ name: "Next.js", category: "Développement Web", icon: <SiNextdotjs className="text-black" /> },
+{ name: "Node.js", category: "Développement Web", icon: <FaNodeJs className="text-green-500" /> },
+{ name: "Express.js", category: "Développement Web", icon: <SiExpress className="text-gray-400" /> },
+{ name: "Sequelize", category: "Développement Web", icon: <SiSequelize className="text-blue-500" /> },
+{ name: "REST API", category: "Développement Web", icon: <FaServer className="text-gray-500" /> },
 
-    // Data & Analytics
-    { name: "Python", category: "Data & Analytics", icon: <FaPython className="text-green-400" /> },
-    { name: "MySQL", category: "Data & Analytics", icon: <SiMysql className="text-indigo-400" /> },
-    { name: "PostgreSQL", category: "Data & Analytics", icon: <BiLogoPostgresql className="text-indigo-400" /> },
-    { name: "Excel avancé ", category: "Data & Analytics", icon: <GrDocumentExcel className="text-green-500" /> },
+// Base de données
+    { name: "MySQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
+    { name: "MongoDB", category: "Base de données", icon: <SiMongodb className="text-green-500" /> },
+    { name: "PostgreSQL", category: "Base de données", icon: <BiLogoPostgresql className="text-indigo-400" /> },
+    { name: "SQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
 
 
+    // Data
+{ name: "Python", category: "Data", icon: <FaPython className="text-blue-400" /> },
+{ name: "Pandas", category: "Data", icon: <SiPandas className="text-purple-500" /> },
+{ name: "NumPy", category: "Data", icon: <SiNumpy className="text-blue-500" /> },
+{ name: "Scikit-learn", category: "Data", icon: <SiScikitlearn className="text-orange-400" /> },
+{ name: "Matplotlib", category: "Data", icon: <SiPlotly className="text-blue-400" /> },
+{ name: "Google Colab", category: "Data", icon: <SiGooglecolab className="text-yellow-500" /> },
+{ name: "Excel", category: "Data", icon: < GrDocumentExcel className="text-green-500" /> },
+{ name: "Power BI", category: "Data", icon: <FaChartBar className="text-yellow-400" /> },
 
-    // Gestion & Méthodes
+// Optionnel
+{ name: "Hadoop (bases)", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
+
     { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
     { name: "UML", category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
     { name: "BPMN", category: "Gestion & Méthodes", icon: <AiFillCode className="text-pink-400" /> },
-    { name: "Gestion de projet Agile", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
-    { name: "Design Thinking", category: "Gestion & Méthodes", icon: <FaLightbulb className="text-yellow-500" /> }, // Exemple
+    { name: "Agile", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
+    { name: "Design Thinking", category: "Gestion & Méthodes", icon: <FaLightbulb className="text-yellow-500" /> },
 
-    // Communication & Outils
     { name: "VS Code", category: "Communication & Outils", icon: <VscCode className="text-blue-400" /> },
     { name: "Hootsuite", category: "Communication & Outils", icon: <SiHootsuite className="text-red-500" /> },
     { name: "Google Analytics", category: "Communication & Outils", icon: <SiGoogleanalytics className="text-orange-500" /> },
-    { name: "Stratégie de contenu", category: "Communication & Outils", icon: <FaPenAlt className="text-pink-500" /> },
-]
-
-const categories = [
-    { name: "Développement Web", color: "from-indigo-500 to-blue-500" },
-    { name: "Data & Analytics", color: "from-purple-500 to-pink-500" },
-    { name: "Gestion & Méthodes", color: "from-orange-500 to-yellow-500" },
-    { name: "Communication & Outils", color: "from-green-500 to-teal-500" }
+    { name: "Stratégie", category: "Communication & Outils", icon: <FaPenAlt className="text-pink-500" /> },
 ]
 
 const SkillCard = ({ skill, index, isVisible }) => {
     return (
         <FadeIn>
             <div
-                className={`group bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-white/10 hover:border-indigo-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/20 ${isVisible ? 'animate-[fadeInUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
-                    }`}
+                className={`group bg-white rounded-xl p-4 border-2 border-[#1a1264] transition-all duration-300 hover:scale-105 hover:shadow-[4px_4px_0px_0px_#1a1264] ${
+                    isVisible ? 'animate-[fadeInUp_0.6s_ease-out_forwards]' : 'opacity-0 translate-y-8'
+                }`}
                 style={{ animationDelay: `${index * 0.05}s` }}
             >
                 <div className="flex flex-col items-center text-center space-y-3">
                     <div className="text-3xl transition-transform duration-300 group-hover:scale-110">
                         {skill.icon}
                     </div>
-                    <h3 className="font-medium text-white text-sm">{skill.name}</h3>
+                    <h3 className="font-bold text-[#1a1264] text-xs uppercase tracking-tight">{skill.name}</h3>
                 </div>
             </div>
         </FadeIn>
@@ -73,22 +85,21 @@ const SkillCard = ({ skill, index, isVisible }) => {
 }
 
 const CategoryCard = ({ category, categorySkills, index, isVisible }) => {
-    const categoryData = categories.find(c => c.name === category)
-
     return (
         <div
-            className={`bg-white/5 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-white/10 ${isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'
-                }`}
+            className={`bg-white rounded-2xl p-6 md:p-8 border-2 border-[#1a1264] ${
+                isVisible ? 'animate-[fadeInUp_0.8s_ease-out_forwards]' : 'opacity-0'
+            }`}
             style={{ animationDelay: `${index * 0.15}s` }}
         >
-            {/* Header */}
-            <div className="flex items-center gap-3 mb-6">
-                <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${categoryData.color}`} />
-                <h3 className="text-xl md:text-2xl font-semibold text-white">{category}</h3>
-
+            <div className="flex items-center gap-3 mb-8">
+                {/* Barre de catégorie unie au lieu de dégradée */}
+                <div className="w-2 h-8 bg-[#1a1264] rounded-full" />
+                <h3 className="text-xl md:text-2xl font-black text-[#1a1264] uppercase tracking-tighter">
+                    {category}
+                </h3>
             </div>
 
-            {/* Skills Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {categorySkills.map((skill, skillIndex) => (
                     <SkillCard
@@ -110,24 +121,16 @@ export default function Skills() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true)
-                }
+                if (entry.isIntersecting) setIsVisible(true)
             },
             { threshold: 0.1 }
         )
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current)
-        }
-
+        if (sectionRef.current) observer.observe(sectionRef.current)
         return () => observer.disconnect()
     }, [])
 
     const groupedSkills = skills.reduce((acc, skill) => {
-        if (!acc[skill.category]) {
-            acc[skill.category] = []
-        }
+        if (!acc[skill.category]) acc[skill.category] = []
         acc[skill.category].push(skill)
         return acc
     }, {})
@@ -136,27 +139,21 @@ export default function Skills() {
         <section
             ref={sectionRef}
             id="skills"
-            className="min-h-screen py-12 md:py-20 relative overflow-hidden"
+            className="min-h-screen py-12 md:py-20 relative bg-[#ebebdf]"
         >
-            {/* Background effects */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-40 left-20 w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-20 right-20 w-32 h-32 bg-fuchsia-500/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
-            </div>
-
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Title */}
-                <div className="text-center mb-12 md:mb-16">
-                    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight ${isVisible ? 'animate-fadeInUp' : 'opacity-0'
-                        }`}>
+                <div className="text-center mb-16">
+                    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-black text-[#1a1264] mb-4 tracking-tighter uppercase ${
+                        isVisible ? 'animate-fadeInUp' : 'opacity-0'
+                    }`}>
                         Mes compétences
                     </h2>
-                    <div className={`w-24 h-1 bg-blue-500 mx-auto rounded-full transition-all duration-1000 ${isVisible ? 'w-24' : 'w-0'
-                        }`} />
+                    <div className={`w-24 h-1.5 bg-[#1a1264] mx-auto transition-all duration-1000 ${
+                        isVisible ? 'w-24' : 'w-0'
+                    }`} />
                 </div>
 
-                {/* Categories */}
-                <div className="space-y-8">
+                <div className="space-y-12">
                     {Object.entries(groupedSkills).map(([category, categorySkills], index) => (
                         <CategoryCard
                             key={category}
@@ -171,14 +168,8 @@ export default function Skills() {
 
             <style>{`
                 @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
                 }
             `}</style>
         </section>
