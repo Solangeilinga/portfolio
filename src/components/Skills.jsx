@@ -50,7 +50,7 @@ const skills = [
 { name: "Power BI", category: "Data", icon: <FaChartBar className="text-yellow-400" /> },
 
 // Optionnel
-{ name: "Hadoop (bases)", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
+{ name: "Hadoop", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
 
     { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
     { name: "UML", category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
