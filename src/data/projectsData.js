@@ -7,6 +7,7 @@ import figure from '../assets/Figure_2.png'
 import excel from '../assets/excel.png'
 import covid19 from '../assets/covid19.png'
 import agricultureDashboard from '../assets/agricultureDashboard.png'
+import scholarhub from '../assets/scholarhub.jpeg'
 
 export const projects = [
         {
@@ -18,18 +19,27 @@ export const projects = [
     image: agricultureDashboard,
     demo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
 },
+{
+    id: 2,
+    title: "ScholarHub – Plateforme intelligente de bourses",
+    description: "Solution digitale complète composée d’une application mobile et d’un dashboard web admin permettant aux étudiants d’accéder facilement à des opportunités de bourses. Le système inclut un backend robuste pour la gestion des données et une interface intuitive pour les administrateurs.",
+    tags: ["Développement web", "Développement Mobile"],
+    Technologies: ["Flutter", "Node.js", "PostgreSQL", "Next.js", "Render", "Netlify"],
+    image: scholarhub,
+    demo: ""
+},
 
     {
-        id: 2,
+        id: 3,
         title: "Site Vitrine d'une agence digitale",
         description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
         tags: ["Développement Web"],
-        Technologies: ["React", "Tailwind"],
+        Technologies: ["React", "Tailwind","Netlify"],
         image: siteVitrine,
         demo: "https://sbureaudigital.netlify.app"
     },
      {
-        id: 3,
+        id: 5,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
@@ -50,7 +60,7 @@ export const projects = [
 
     },
     {
-        id: 5,
+        id: 9,
         title: "Quiz interactif avancé (Fev 2025)",
         description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
         tags: ["Développement Web"],
