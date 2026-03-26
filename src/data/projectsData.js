@@ -23,7 +23,7 @@ export const projects = [
     id: 2,
     title: "ScholarHub – Plateforme intelligente de bourses",
     description: "Solution digitale complète composée d’une application mobile et d’un dashboard web admin permettant aux étudiants d’accéder facilement à des opportunités de bourses. Le système inclut un backend robuste pour la gestion des données et une interface intuitive pour les administrateurs.",
-    tags: ["Développement web", "Développement Mobile"],
+    tags: ["Développement Web", "Développement Mobile"],
     Technologies: ["Flutter", "Node.js", "PostgreSQL", "Next.js", "Render", "Netlify"],
     image: scholarhub,
     demo: ""
