@@ -8,6 +8,7 @@ import excel from '../assets/excel.png'
 import covid19 from '../assets/covid19.png'
 import agricultureDashboard from '../assets/agricultureDashboard.png'
 import scholarhub from '../assets/scholarhub.jpeg'
+import mentalHealthApp from '../assets/mental_prediction.png'
 
 export const projects = [
         {
@@ -17,7 +18,7 @@ export const projects = [
     tags: ["Data Analysis"],
     Technologies: ["Power BI", "Excel", "Data Visualization"],
     image: agricultureDashboard,
-    demo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
+    repo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
 },
 {
     id: 2,
@@ -28,9 +29,19 @@ export const projects = [
     image: scholarhub,
     demo: ""
 },
+{
+    id: 3,
+    title: "Student Mental Health Predictor",
+    description: "Application interactive développée avec Streamlit permettant d’évaluer le risque de dépression chez les étudiants à partir de leurs données personnelles, académiques et habitudes de vie. Le projet inclut un modèle de machine learning entraîné avec scikit-learn et un pipeline complet pour le traitement et la prédiction des données.",
+    tags: ["Data Science", "Machine Learning"],
+    Technologies: ["Python", "Streamlit", "scikit-learn", "pandas", "NumPy"],
+    image: mentalHealthApp,
+    demo: "https://studentmentalhealthpredictionapp.streamlit.app/",
+    repo: "https://github.com/Solangeilinga/Student_Mental_Health_Prediction_App.git"
+},
 
     {
-        id: 3,
+        id: 4,
         title: "Site Vitrine d'une agence digitale",
         description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
         tags: ["Développement Web"],
@@ -39,7 +50,7 @@ export const projects = [
         demo: "https://sbureaudigital.netlify.app"
     },
      {
-        id: 5,
+        id: 6,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
@@ -50,7 +61,7 @@ export const projects = [
     },
    
       {
-        id: 4,
+        id: 5,
         title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
         description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
         tags: ["Data Analysis"],
@@ -60,7 +71,7 @@ export const projects = [
 
     },
     {
-        id: 9,
+        id: 10,
         title: "Quiz interactif avancé (Fev 2025)",
         description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
         tags: ["Développement Web"],
@@ -68,8 +79,8 @@ export const projects = [
         image: quizImage,
         demo: "https://solangeilinga.github.io/Quiz/"
     },
-    {
-        id: 6,
+    
+    {    id: 7,
         title: "La conception d'un Porfolio",
         description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
         tags: ["Développement Web"],
@@ -79,7 +90,7 @@ export const projects = [
     },
   
     {
-        id: 7,
+        id: 8,
         title: "Analyse du Churn Client (Sept 2025)",
         description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
         tags: ["Data Analysis"],
@@ -89,7 +100,7 @@ export const projects = [
 
     },
      {
-        id: 8,
+        id: 9,
         title: "Site vitrine d'un Salon de Beauty",
         description: "Site vitrine moderne pour un salon de beauté, avec design élégant et responsive.Animations fluides et navigation intuitive.",
         tags: ["Développement Web"],
