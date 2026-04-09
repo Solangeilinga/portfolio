@@ -55,11 +55,11 @@ const skills = [
 // Optionnel
 { name: "Hadoop", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
 
-    { name: "Git", category: "Gestion & Méthodes", icon: <FaGitAlt className="text-orange-500" /> },
-    { name: "UML", category: "Gestion & Méthodes", icon: <MdOutlineModelTraining className="text-purple-400" /> },
-    { name: "BPMN", category: "Gestion & Méthodes", icon: <AiFillCode className="text-pink-400" /> },
-    { name: "Agile", category: "Gestion & Méthodes", icon: <FaProjectDiagram className="text-purple-500" /> },
-    { name: "Design Thinking", category: "Gestion & Méthodes", icon: <FaLightbulb className="text-yellow-500" /> },
+    { name: "Git", category: "Méthodes et Outils", icon: <FaGitAlt className="text-orange-500" /> },
+    { name: "UML", category: "Méthodes et Outils", icon: <MdOutlineModelTraining className="text-purple-400" /> },
+    { name: "BPMN", category: "Méthodes et Outils", icon: <AiFillCode className="text-pink-400" /> },
+    { name: "Agile", category: "Méthodes et Outils", icon: <FaProjectDiagram className="text-purple-500" /> },
+    { name: "Design Thinking", category: "Méthodes et Outils", icon: <FaLightbulb className="text-yellow-500" /> },
 
     { name: "VS Code", category: "Communication & Outils", icon: <VscCode className="text-blue-400" /> },
     { name: "Hootsuite", category: "Communication & Outils", icon: <SiHootsuite className="text-red-500" /> },
