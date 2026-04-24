@@ -21,19 +21,18 @@ import { SiFlutter, SiReact } from "react-icons/si";
 
 const skills = [
     // Développement Web et Mobile
-{ name: "JavaScript", category: "Développement Web", icon: <SiJavascript className="text-yellow-400" /> },
-{ name: "HTML", category: "Développement Web", icon: <SiHtml5 className="text-orange-500" /> },
-{ name: "CSS", category: "Développement Web", icon: <SiCss3 className="text-blue-400" /> },
-{ name: "Tailwind CSS", category: "Développement Web", icon: <RiTailwindCssFill className="text-blue-400" /> },
-{ name: "WordPress", category: "Développement Web", icon: <FaWordpress className="text-indigo-400" /> },
-{ name: "React", category: "Développement Web", icon: <FaReact className="text-blue-400" /> },
-{ name: "Next.js", category: "Développement Web", icon: <SiNextdotjs className="text-black" /> },
-{ name: "Flutter", category: "Développement Web", icon: <SiFlutter className="text-blue-500" /> },
-{ name: "React Native", category: "Développement Web", icon: <SiReact className="text-blue-400" /> },
-{ name: "Node.js", category: "Développement Web", icon: <FaNodeJs className="text-green-500" /> },
-{ name: "Express.js", category: "Développement Web", icon: <SiExpress className="text-gray-400" /> },
-{ name: "Sequelize", category: "Développement Web", icon: <SiSequelize className="text-blue-500" /> },
-{ name: "REST API", category: "Développement Web", icon: <FaServer className="text-gray-500" /> },
+{ name: "JavaScript", category: "Développement Web et Mobile", icon: <SiJavascript className="text-yellow-400" /> },
+{ name: "HTML", category: "Développement Web et Mobile", icon: <SiHtml5 className="text-orange-500" /> },
+{ name: "CSS", category: "Développement Web et Mobile", icon: <SiCss3 className="text-blue-400" /> },
+{ name: "Tailwind CSS", category: "Développement Web et Mobile", icon: <RiTailwindCssFill className="text-blue-400" /> },
+{ name: "WordPress", category: "Développement Web et Mobile", icon: <FaWordpress className="text-indigo-400" /> },
+{ name: "React", category: "Développement Web et Mobile", icon: <FaReact className="text-blue-400" /> },
+{ name: "Next.js", category: "Développement Web et Mobile", icon: <SiNextdotjs className="text-black" /> },
+{ name: "Flutter", category: "Développement Web et Mobile", icon: <SiFlutter className="text-blue-500" /> },
+{ name: "Node.js", category: "Développement Web et Mobile", icon: <FaNodeJs className="text-green-500" /> },
+{ name: "Express.js", category: "Développement Web et Mobile", icon: <SiExpress className="text-gray-400" /> },
+{ name: "Sequelize", category: "Développement Web et Mobile", icon: <SiSequelize className="text-blue-500" /> },
+{ name: "REST API", category: "Développement Web et Mobile", icon: <FaServer className="text-gray-500" /> },
 
 // Base de données
     { name: "MySQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
