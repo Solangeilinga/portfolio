@@ -109,7 +109,7 @@ export default function Hero() {
                             </a>
                             
                             <a
-                                href="cv.pdf"
+                                href="cv_solange_ILINGA.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative px-6 py-3 bg-[#1a1264] rounded-lg font-semibold text-[#ebebdf] text-base shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden"
