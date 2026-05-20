@@ -9,7 +9,7 @@ import covid19 from '../assets/covid19.png'
 import agricultureDashboard from '../assets/agricultureDashboard.png'
 import scholarhub from '../assets/scholarhub.jpeg'
 import mentalHealthApp from '../assets/mental_prediction.png'
-// Nouvelles importations pour les deux projets
+import edublog from '../assets/edublog.png'
 import walmartPipeline from '../assets/walmart_pipeline.png';
 import bankMarketingCleaning from '../assets/bank_marketing_cleaning.png';
 
@@ -63,7 +63,15 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/Student_Mental_Health_Prediction_App.git"
     },
     {
-        id: 4,
+    id: 4,
+    title: "EduBlog – Plateforme éditoriale pour la jeunesse africaine",
+    description: "Plateforme de blog full-stack dédiée à l'orientation, la carrière et les opportunités pour les jeunes africains. Comprend un backend REST API sécurisé (authentification JWT avec refresh token, vérification email via Brevo, upload Cloudinary), un frontend Next.js avec Server Components, SEO dynamique, tableau de bord auteur et système de commentaires temps réel.",
+    tags: ["Next.js", "Node.js", "MySQL", "TypeScript"],
+    image: edublog,
+    demo: ""
+},
+    {
+        id: 5,
         title: "Site Vitrine d'une agence digitale",
         description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
         tags: ["Développement Web"],
@@ -72,7 +80,7 @@ export const projects = [
         demo: "https://sbureaudigital.netlify.app"
     },
     {
-        id: 6,
+        id: 7,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
@@ -81,7 +89,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
     },
     {
-        id: 5,
+        id: 6,
         title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
         description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
         tags: ["Data Analysis"],
@@ -99,7 +107,7 @@ export const projects = [
         demo: "https://solangeilinga.github.io/Quiz/"
     },
     {
-        id: 7,
+        id: 11,
         title: "La conception d'un Portfolio",
         description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
         tags: ["Développement Web"],
