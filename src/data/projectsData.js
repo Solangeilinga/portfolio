@@ -15,7 +15,7 @@ import bankMarketingCleaning from '../assets/bank_marketing_cleaning.png';
 
 export const projects = [
     {
-        id: 11,
+        id: 1,
         title: "Walmart E-commerce Data Pipeline",
         description: "Pipeline ETL complet pour analyser l'impact des jours fériés sur les ventes Walmart. Extraction depuis PostgreSQL, nettoyage, agrégation des ventes moyennes mensuelles, chargement CSV et validation.",
         tags: ["Data Engineering", "ETL"],
@@ -25,7 +25,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 12,
+        id: 2,
         title: "Bank Marketing Data Cleaning",
         description: "Nettoyage et normalisation d’un fichier CSV de campagne marketing bancaire pour import PostgreSQL. Nettoyage et partitionnement en trois tables (client, campagne, économie).",
         tags: ["Data Cleaning", "ETL"],
@@ -35,7 +35,7 @@ export const projects = [
         demo: ""
     },
     {
-        id: 1,
+        id: 3,
         title: "Agricultural Performance & Microcredit Analysis",
         description: "Analyse des performances agricoles et de l’impact du microcrédit sur les agriculteurs au Sénégal (2019–2023) à travers un dashboard interactif.",
         tags: ["Data Analysis"],
@@ -43,17 +43,17 @@ export const projects = [
         image: agricultureDashboard,
         repo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
     },
+   {
+    id: 4,
+    title: "ScholarHub – Plateforme intelligente de recherche de bourses",
+    description: "Solution digitale complète dédiée à l’accompagnement des étudiants dans la recherche et la gestion des opportunités de bourses. Le projet comprend une application mobile, une landing page de présentation, un dashboard web administratif et un backend robuste pour la gestion centralisée des données. ScholarHub intègre également un assistant intelligent permettant d’orienter les utilisateurs, de répondre à leurs questions et de faciliter leurs démarches académiques et administratives.",
+    tags: ["Développement Web", "Développement Mobile", "EdTech"],
+    Technologies: ["Flutter", "Next.js", "Node.js", "PostgreSQL", "Tailwind CSS", "Render", "Netlify"],
+    image: scholarhub,
+    demo: "https://scholarhubsite.netlify.app/",
+},
     {
-        id: 2,
-        title: "ScholarHub – Plateforme intelligente de bourses",
-        description: "Solution digitale complète composée d’une application mobile et d’un dashboard web admin permettant aux étudiants d’accéder facilement à des opportunités de bourses. Le système inclut un backend robuste pour la gestion des données et une interface intuitive pour les administrateurs.",
-        tags: ["Développement Web", "Développement Mobile"],
-        Technologies: ["Flutter", "Node.js", "PostgreSQL", "Next.js", "Render", "Netlify"],
-        image: scholarhub,
-        demo: ""
-    },
-    {
-        id: 3,
+        id: 5,
         title: "Student Mental Health Predictor",
         description: "Application interactive développée avec Streamlit permettant d’évaluer le risque de dépression chez les étudiants à partir de leurs données personnelles, académiques et habitudes de vie. Le projet inclut un modèle de machine learning entraîné avec scikit-learn et un pipeline complet pour le traitement et la prédiction des données.",
         tags: ["Data Science", "Machine Learning"],
@@ -62,16 +62,17 @@ export const projects = [
         demo: "https://studentmentalhealthpredictionapp.streamlit.app/",
         repo: "https://github.com/Solangeilinga/Student_Mental_Health_Prediction_App.git"
     },
+ {
+  id: 6,
+  title: "EduBlog – Plateforme éditoriale pour la jeunesse africaine",
+  description: "Plateforme de blog full-stack pensée pour accompagner les jeunes africains dans leur orientation, leur carrière et leurs opportunités. Les auteurs publient et gèrent leurs articles depuis un tableau de bord dédié, les lecteurs explorent les contenus par catégorie, likent, commentent et sauvegardent leurs favoris. Authentification sécurisée, upload d'images, emails automatiques et interface optimisée pour le SEO.",
+  tags: ["Développement Web", "Full-Stack"],
+  Technologies: ["Next.js", "Node.js", "MySQL", "TypeScript", "Tailwind CSS", "Docker"],
+  image: edublog,
+  demo: "https://edublogsite.netlify.app/",
+}
     {
-    id: 4,
-    title: "EduBlog – Plateforme éditoriale pour la jeunesse africaine",
-    description: "Plateforme de blog full-stack dédiée à l'orientation, la carrière et les opportunités pour les jeunes africains. Comprend un backend REST API sécurisé (authentification JWT avec refresh token, vérification email via Brevo, upload Cloudinary), un frontend Next.js avec Server Components, SEO dynamique, tableau de bord auteur et système de commentaires temps réel.",
-    tags: ["Next.js", "Node.js", "MySQL", "TypeScript"],
-    image: edublog,
-    demo: ""
-},
-    {
-        id: 5,
+        id: 7,
         title: "Site Vitrine d'une agence digitale",
         description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
         tags: ["Développement Web"],
@@ -80,7 +81,7 @@ export const projects = [
         demo: "https://sbureaudigital.netlify.app"
     },
     {
-        id: 7,
+        id: 8,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
@@ -89,7 +90,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
     },
     {
-        id: 6,
+        id: 9,
         title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
         description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
         tags: ["Data Analysis"],
@@ -116,7 +117,7 @@ export const projects = [
         demo: "https://portfolio32299.wordpress.com/"
     },
     {
-        id: 8,
+        id: 12,
         title: "Analyse du Churn Client (Sept 2025)",
         description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
         tags: ["Data Analysis"],
@@ -125,7 +126,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
     },
     {
-        id: 9,
+        id: 13,
         title: "Site vitrine d'un Salon de Beauté",
         description: "Site vitrine moderne pour un salon de beauté, avec design élégant et responsive. Animations fluides et navigation intuitive.",
         tags: ["Développement Web"],
