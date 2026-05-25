@@ -70,7 +70,7 @@ export const projects = [
   Technologies: ["Next.js", "Node.js", "MySQL", "TypeScript", "Tailwind CSS", "Docker"],
   image: edublog,
   demo: "https://edublogsite.netlify.app/",
-}
+},
     {
         id: 7,
         title: "Site Vitrine d'une agence digitale",
