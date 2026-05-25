@@ -55,7 +55,7 @@ export default function Hero() {
     const professions = [
         "Étudiante en Bachelor of Engineering",
         "Tech Enthusiast",
-        "Future Leader Transformationnelle",
+        "Leader Transformationnelle",
         "Orientée impact"
     ]
 
