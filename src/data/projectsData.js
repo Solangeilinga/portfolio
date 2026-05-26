@@ -12,6 +12,7 @@ import mentalHealthApp from '../assets/mental_prediction.png'
 import edublog from '../assets/edublog.png'
 import walmartPipeline from '../assets/walmart_pipeline.png';
 import bankMarketingCleaning from '../assets/bank_marketing_cleaning.png';
+import hospitalisationApp from '../assets/hospitalisation_app.png';
 
 export const projects = [
     {
@@ -43,14 +44,15 @@ export const projects = [
         image: agricultureDashboard,
         repo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
     },
-   {
-    id: 4,
-    title: "ScholarHub – Plateforme intelligente de recherche de bourses",
-    description: "Solution digitale complète dédiée à l’accompagnement des étudiants dans la recherche et la gestion des opportunités de bourses. Le projet comprend une application mobile, une landing page de présentation, un dashboard web administratif et un backend robuste pour la gestion centralisée des données. ScholarHub intègre également un assistant intelligent permettant d’orienter les utilisateurs, de répondre à leurs questions et de faciliter leurs démarches académiques et administratives.",
-    tags: ["Développement Web", "Développement Mobile"],
-    Technologies: ["Flutter", "Next.js", "Node.js", "PostgreSQL", "Tailwind CSS", "Render", "Netlify", "Supabase"],
-    image: scholarhub,
-    demo: "https://scholarhubsite.netlify.app/",
+ {
+  id: 4,
+  title: "ScholarHub – Plateforme intelligente de recherche de bourses",
+  description:
+    "Projet collaboratif conçu autour de la problématique d’accès aux opportunités de bourses pour les étudiants. J’ai participé à la conception et assuré le développement technique de la solution, comprenant une application mobile, une landing page de présentation, un dashboard web administratif ainsi qu’un backend robuste pour la gestion centralisée des données. ScholarHub intègre également un assistant intelligent permettant d’orienter les utilisateurs, de répondre à leurs questions et de faciliter leurs démarches académiques et administratives.",
+  tags: ["Développement Web", "Développement Mobile"],
+  Technologies: ["Flutter", "Next.js", "Node.js", "PostgreSQL", "Tailwind CSS", "Render", "Netlify", "Supabase"],
+  image: scholarhub,
+  demo: "https://scholarhubsite.netlify.app/",
 },
     {
         id: 5,
@@ -71,8 +73,18 @@ export const projects = [
   image: edublog,
   demo: "https://edublogsite.netlify.app/",
 },
+{
+    id: 7,
+    title: "Prédiction d'Hospitalisation aux Urgences",
+    description: "Application interactive développée avec Streamlit pour prédire si un patient admis aux urgences sera hospitalisé. Le projet repose sur un dataset de 32 000 patients et compare deux modèles de classification (Random Forest et Régression Logistique) avec un pipeline complet de nettoyage, feature engineering, encodage et normalisation des données. La Régression Logistique a été retenue avec un ROC-AUC de 0.90 et un Recall de 78% sur la classe hospitalisée.",
+    tags: ["Data Science", "Machine Learning"],
+    Technologies: ["Python", "Streamlit", "scikit-learn", "pandas", "NumPy"],
+    image: hospitalisationApp,
+    demo: "https://hospitalisation-app-mwwmugbxfzwlhjdciybgez.streamlit.app/",
+    repo: "https://github.com/Solangeilinga/hospitalisation-app.git",
+},
     {
-        id: 7,
+        id: 8,
         title: "Site Vitrine d'une agence digitale",
         description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
         tags: ["Développement Web"],
@@ -81,7 +93,7 @@ export const projects = [
         demo: "https://sbureaudigital.netlify.app"
     },
     {
-        id: 8,
+        id: 9,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
         description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
         tags: ["Data Analysis"],
@@ -90,7 +102,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
     },
     {
-        id: 9,
+        id: 10,
         title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
         description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
         tags: ["Data Analysis"],
@@ -99,7 +111,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
     },
     {
-        id: 10,
+        id: 11,
         title: "Quiz interactif avancé (Fev 2025)",
         description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
         tags: ["Développement Web"],
@@ -108,7 +120,7 @@ export const projects = [
         demo: "https://solangeilinga.github.io/Quiz/"
     },
     {
-        id: 11,
+        id: 12,
         title: "La conception d'un Portfolio",
         description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
         tags: ["Développement Web"],
@@ -117,7 +129,7 @@ export const projects = [
         demo: "https://portfolio32299.wordpress.com/"
     },
     {
-        id: 12,
+        id: 13,
         title: "Analyse du Churn Client (Sept 2025)",
         description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
         tags: ["Data Analysis"],
@@ -126,7 +138,7 @@ export const projects = [
         repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
     },
     {
-        id: 13,
+        id: 14,
         title: "Site vitrine d'un Salon de Beauté",
         description: "Site vitrine moderne pour un salon de beauté, avec design élégant et responsive. Animations fluides et navigation intuitive.",
         tags: ["Développement Web"],
