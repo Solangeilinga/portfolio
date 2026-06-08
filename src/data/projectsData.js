@@ -13,6 +13,7 @@ import edublog from '../assets/edublog.png'
 import walmartPipeline from '../assets/walmart_pipeline.png';
 import bankMarketingCleaning from '../assets/bank_marketing_cleaning.png';
 import hospitalisationApp from '../assets/hospitalisation_app.png';
+import water_potability from '../assets/water_potability.png';
 
 export const projects = [
     {
@@ -92,6 +93,16 @@ export const projects = [
         image: siteVitrine,
         demo: "https://sbureaudigital.netlify.app"
     },
+    {
+    id: 15,
+    title: "Projet H2 — Prédiction de la potabilité de l'eau",
+    description: "Pipeline complet de Machine Learning pour prédire si l'eau est potable à partir de paramètres physico-chimiques (pH, dureté, solides, chloramines, sulfate, conductivité, matière organique, trihalométhanes). Le projet inclut une analyse exploratoire poussée, la comparaison de 4 modèles (Régression Logistique, Random Forest, XGBoost, SVM), l'optimisation du seuil de classification avec SHAP pour l'interprétabilité, et une application interactive de terrain.",
+    tags: ["Data Science", "Machine Learning", "ETL"],
+    Technologies: ["Python", "Pandas", "scikit-learn", "XGBoost", "SHAP", "Streamlit", "Matplotlib", "Seaborn"],
+    image: water_potability, // À remplacer par le chemin de l'image si disponible
+    repo: "https://github.com/Solangeilinga/projet-potabilite-eau.git", // À remplir si vous push ce projet sur GitHub
+    demo: "https://projet-potabilite-eau-667gnpnfdko4imxs5vgx8a.streamlit.app/"
+},
     {
         id: 9,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
