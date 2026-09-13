@@ -61,6 +61,18 @@ export default function ProjectCard({ project }) {
                         <LuExternalLink size={14} />
                     </a>
                 )}
+                {project.links && project.links.map((link, idx) => (
+                    <a
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 text-xs font-bold bg-[#1a1264] text-[#ebebdf] rounded-lg hover:opacity-90 transition-opacity"
+                    >
+                        {link.label.toUpperCase()}
+                        <LuExternalLink size={14} />
+                    </a>
+                ))}
             </div>
         </div>
     );

@@ -3,8 +3,8 @@ import { Book, FolderOpen, Code2, Rocket } from 'lucide-react'
 
 const stats = [
     { number: "3ème", label: "Année de Bachelor of Engineering", icon: <Book size={24} /> },
-    { number: "10+", label: "Projets réalisés", icon: <FolderOpen size={24} /> },
-    { number: "8+", label: "Technologies utilisées", icon: <Code2 size={24} /> },
+    { number: "19+", label: "Projets réalisés", icon: <FolderOpen size={24} /> },
+    { number: "30+", label: "Technologies utilisées", icon: <Code2 size={24} /> },
     { number: "100%", label: "Motivation", icon: <Rocket size={24} /> }
 ]
 
@@ -132,7 +132,7 @@ export default function About() {
                                 Je suis une étudiante passionnée par la technologie, actuellement en <span className="font-bold">Bachelor of Engineering</span>, un diplôme conjoint entre <span className="font-bold">l'École Centrale Casablanca</span> et <span className="font-bold">l'Institut International d'Ingénierie de l'Eau et de l'Environnement (2iE)</span>. Boursière de la Fondation Mastercard, je bénéficie d'un environnement qui encourage l'excellence, le leadership et l'engagement social.
                             </p>
                             <p className="text-[#1a1264] leading-relaxed mb-6 text-lg">
-                                Je m'intéresse particulièrement au <span className="font-bold">développement web et aux domaines de la data</span>. Curieuse et motivée, j'aime apprendre en réalisant des projets concrets qui répondent à des problématiques réelles, notamment dans les domaines sociaux et éducatifs.
+                                Je m'intéresse particulièrement aux <span className="font-bold">domaines de la data et de l'intelligence artificielle</span> (traitement de données, Machine Learning, pipelines ETL), que je complète par une pratique du développement web et mobile. Curieuse et motivée, j'aime apprendre en réalisant des projets concrets qui répondent à des problématiques réelles, notamment dans les domaines sociaux et éducatifs.
                             </p>
                             <p className="text-[#1a1264] leading-relaxed text-lg mb-8">
                                 <span className="font-bold">Mon ambition :</span> contribuer à des projets innovants qui combinent technologie et impact positif, tout en développant mes compétences dans un cadre professionnel stimulant.

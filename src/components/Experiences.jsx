@@ -3,6 +3,15 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
     {
+        id: 3,
+        title: "Projet Intégrateur",
+        company: "InnoFaso",
+        location: "Ouagadougou, Burkina Faso",
+        period: "7 Avril 2026 - 29 Juin 2026",
+        description: "Projet réalisé en équipe durant ma mobilité académique à 2iE : conception d'un module d'IA de prédiction des pannes d'équipements industriels, digitalisation des processus de production et gestion de projet complète (planning, diagramme de Gantt, contraintes), jusqu'à la soutenance finale.",
+        skills: ["Machine Learning", "Data Science", "Gestion de Projet"]
+    },
+    {
         id: 1,
         title: "Stage en Développement Web Fullstack",
         company: "Ahiyoyo",

@@ -12,7 +12,8 @@ export default function Projects() {
     const filtersRef = useRef(null)
 
     const tags = ['All', ...new Set(projects.flatMap(p => p.tags))]
-    const filtered = displayedFilter === 'All' ? projects : projects.filter(p => p.tags.includes(displayedFilter))
+    const sorted = [...projects].sort((a, b) => (b.featured === true) - (a.featured === true))
+    const filtered = displayedFilter === 'All' ? sorted : sorted.filter(p => p.tags.includes(displayedFilter))
 
     useEffect(() => {
         const obs = (ref, setter) => {
