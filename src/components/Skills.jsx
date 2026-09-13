@@ -20,6 +20,23 @@ import { SiPandas, SiNumpy,SiScikitlearn, SiPlotly, SiGooglecolab , SiApachehado
 import { SiFlutter, SiReact } from "react-icons/si";
 
 const skills = [
+    // Data
+{ name: "Python", category: "Data", icon: <FaPython className="text-blue-400" /> },
+{ name: "Pandas", category: "Data", icon: <SiPandas className="text-purple-500" /> },
+{ name: "NumPy", category: "Data", icon: <SiNumpy className="text-blue-500" /> },
+{ name: "Scikit-learn", category: "Data", icon: <SiScikitlearn className="text-orange-400" /> },
+{ name: "Matplotlib", category: "Data", icon: <SiPlotly className="text-blue-400" /> },
+{ name: "Google Colab", category: "Data", icon: <SiGooglecolab className="text-yellow-500" /> },
+{ name: "Excel", category: "Data", icon: < GrDocumentExcel className="text-green-500" /> },
+{ name: "Power BI", category: "Data", icon: <FaChartBar className="text-yellow-400" /> },
+{ name: "Hadoop", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
+
+// Base de données
+    { name: "PostgreSQL", category: "Base de données", icon: <BiLogoPostgresql className="text-indigo-400" /> },
+    { name: "SQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
+    { name: "MySQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
+    { name: "MongoDB", category: "Base de données", icon: <SiMongodb className="text-green-500" /> },
+
     // Développement Web et Mobile
 { name: "JavaScript", category: "Développement Web et Mobile", icon: <SiJavascript className="text-yellow-400" /> },
 { name: "HTML", category: "Développement Web et Mobile", icon: <SiHtml5 className="text-orange-500" /> },
@@ -33,26 +50,6 @@ const skills = [
 { name: "Express.js", category: "Développement Web et Mobile", icon: <SiExpress className="text-gray-400" /> },
 { name: "Sequelize", category: "Développement Web et Mobile", icon: <SiSequelize className="text-blue-500" /> },
 { name: "REST API", category: "Développement Web et Mobile", icon: <FaServer className="text-gray-500" /> },
-
-// Base de données
-    { name: "MySQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
-    { name: "MongoDB", category: "Base de données", icon: <SiMongodb className="text-green-500" /> },
-    { name: "PostgreSQL", category: "Base de données", icon: <BiLogoPostgresql className="text-indigo-400" /> },
-    { name: "SQL", category: "Base de données", icon: <SiMysql className="text-blue-500" /> },
-
-
-    // Data
-{ name: "Python", category: "Data", icon: <FaPython className="text-blue-400" /> },
-{ name: "Pandas", category: "Data", icon: <SiPandas className="text-purple-500" /> },
-{ name: "NumPy", category: "Data", icon: <SiNumpy className="text-blue-500" /> },
-{ name: "Scikit-learn", category: "Data", icon: <SiScikitlearn className="text-orange-400" /> },
-{ name: "Matplotlib", category: "Data", icon: <SiPlotly className="text-blue-400" /> },
-{ name: "Google Colab", category: "Data", icon: <SiGooglecolab className="text-yellow-500" /> },
-{ name: "Excel", category: "Data", icon: < GrDocumentExcel className="text-green-500" /> },
-{ name: "Power BI", category: "Data", icon: <FaChartBar className="text-yellow-400" /> },
-
-// Optionnel
-{ name: "Hadoop", category: "Data", icon: <SiApachehadoop className="text-yellow-600" /> },
 
     { name: "Git", category: "Méthodes et Outils", icon: <FaGitAlt className="text-orange-500" /> },
     { name: "UML", category: "Méthodes et Outils", icon: <MdOutlineModelTraining className="text-purple-400" /> },

@@ -53,9 +53,9 @@ const TypewriterEffect = ({ texts }) => {
 
 export default function Hero() {
     const professions = [
-        "Étudiante en Bachelor of Engineering",
-        "Tech Enthusiast",
-        "Leader Transformationnelle",
+        "Élève-ingénieure en Data & IA",
+        "Data Engineer en devenir",
+        "Passionnée de Machine Learning",
         "Orientée impact"
     ]
 

@@ -14,6 +14,10 @@ import walmartPipeline from '../assets/walmart_pipeline.png';
 import bankMarketingCleaning from '../assets/bank_marketing_cleaning.png';
 import hospitalisationApp from '../assets/hospitalisation_app.png';
 import water_potability from '../assets/water_potability.png';
+import innofaso from '../assets/innofaso.png';
+import basyam from '../assets/basyam.png';
+import tontine from '../assets/matontine.png';
+import mathbotPlaceholder from '../assets/mathbot-placeholder.svg';
 
 export const projects = [
     {
@@ -24,7 +28,8 @@ export const projects = [
         Technologies: ["Python", "Pandas", "SQL"],
         image: walmartPipeline,
         repo: "https://github.com/Solangeilinga/walmart-data-pipeline.git",
-        demo: ""
+        demo: "",
+        featured: true
     },
     {
         id: 2,
@@ -34,7 +39,8 @@ export const projects = [
         Technologies: ["Python", "Pandas", "NumPy"],
         image: bankMarketingCleaning,
         repo: "https://github.com/Solangeilinga/bank-marketing-campaign-data-cleaning.git",
-        demo: ""
+        demo: "",
+        featured: true
     },
     {
         id: 3,
@@ -43,7 +49,8 @@ export const projects = [
         tags: ["Data Analysis"],
         Technologies: ["Power BI", "Excel", "Data Visualization"],
         image: agricultureDashboard,
-        repo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi"
+        repo: "https://github.com/Solangeilinga/microcredit-agriculture-powerbi",
+        featured: true
     },
  {
   id: 4,
@@ -63,7 +70,8 @@ export const projects = [
         Technologies: ["Python", "Streamlit", "scikit-learn", "pandas", "NumPy"],
         image: mentalHealthApp,
         demo: "https://studentmentalhealthpredictionapp.streamlit.app/",
-        repo: "https://github.com/Solangeilinga/Student_Mental_Health_Prediction_App.git"
+        repo: "https://github.com/Solangeilinga/Student_Mental_Health_Prediction_App.git",
+        featured: true
     },
  {
   id: 6,
@@ -83,6 +91,7 @@ export const projects = [
     image: hospitalisationApp,
     demo: "https://hospitalisation-app-mwwmugbxfzwlhjdciybgez.streamlit.app/",
     repo: "https://github.com/Solangeilinga/hospitalisation-app.git",
+    featured: true,
 },
     {
         id: 8,
@@ -101,7 +110,8 @@ export const projects = [
     Technologies: ["Python", "Pandas", "scikit-learn", "XGBoost", "SHAP", "Streamlit", "Matplotlib", "Seaborn"],
     image: water_potability, // À remplacer par le chemin de l'image si disponible
     repo: "https://github.com/Solangeilinga/projet-potabilite-eau.git", // À remplir si vous push ce projet sur GitHub
-    demo: "https://projet-potabilite-eau-667gnpnfdko4imxs5vgx8a.streamlit.app/"
+    demo: "https://projet-potabilite-eau-667gnpnfdko4imxs5vgx8a.streamlit.app/",
+    featured: true
 },
     {
         id: 9,
@@ -111,6 +121,7 @@ export const projects = [
         image: covid19,
         Technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
         repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
+        featured: true
     },
     {
         id: 10,
@@ -120,6 +131,7 @@ export const projects = [
         image: figure,
         Technologies: ["Python"],
         repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
+        featured: true
     },
     {
         id: 11,
@@ -147,6 +159,7 @@ export const projects = [
         image: excel,
         Technologies: ["Excel"],
         repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
+        featured: true
     },
     {
         id: 14,
@@ -156,5 +169,38 @@ export const projects = [
         Technologies: ["React", "Tailwind"],
         image: coiffure,
         demo: "https://salontemplats.netlify.app/"
+    },
+    {
+    id: 16,
+    title: "InnoFaso – Digitalisation Maintenance & Production",
+    description: "Projet de fin de cycle Bachelor réalisé en équipe de 4 pour l'entreprise agroalimentaire InnoFaso (Burkina Faso). Digitalisation de 51 formulaires métiers (maintenance et production), centralisation des données dans une base PostgreSQL, et exploitation via des tableaux de bord avec indicateurs industriels en temps réel (MTBF, MTTR, taux de disponibilité). Développement d'un module d'Intelligence Artificielle entraîné sur 5 ans d'historique réel avec un modèle XGBoost atteignant un AUC-ROC de 0,99, intégrant également un service NLP de classification des causes de pannes et un assistant conversationnel. Architecture fullstack déployée en production sur Netlify, Render et Supabase.",
+    tags: ["Développement Web", "Intelligence Artificielle", "Data Science", "Gestion de Projet"],
+    Technologies: ["React.js", "Node.js", "PostgreSQL", "Python", "Flask", "XGBoost", "Supabase", "Tailwind CSS"],
+    image: innofaso,
+    featured: true
+},
+    {
+        id: 17,
+        title: "BASYAM – Application mobile de bien-être mental pour les jeunes",
+        description: "Application mobile de bien-être mental dont je suis fondatrice et développeuse, destinée aux jeunes. Elle propose un suivi quotidien de l'humeur avec analyse des tendances, des défis personnalisés recommandés selon l'historique de l'utilisateur, une communauté anonyme et bienveillante, ainsi qu'un annuaire de professionnels de santé mentale avec prise de rendez-vous en ligne. Un bouton d'alerte permet à tout utilisateur en détresse de prévenir immédiatement l'équipe de suivi. L'expérience est renforcée par de la gamification (points, badges, niveaux).",
+        tags: ["Développement Mobile", "Développement Web"],
+        Technologies: ["Flutter", "Dart", "Node.js", "Express", "MongoDB", "Firebase", "Next.js", "TypeScript"],
+        image: basyam,
+        demo: "https://www.basyam.com", // lien fictif, à remplacer
+        links: [
+            { label: "Facebook", url: "https://www.facebook.com/share/1L7ypUubdx" },
+            { label: "LinkedIn", url: "https://www.linkedin.com/company/basyam" }, 
+        ],
+        featured: true
+    },
+    {
+        id: 18,
+        title: "MaTontine – Application multi-plateforme de gestion de tontines",
+        description: "Application multi-plateforme de gestion de tontines (associations d'épargne rotative) pour l'Afrique de l'Ouest. Un gérant crée et administre ses groupes depuis l'app, les membres rejoignent uniquement avec leur numéro de téléphone (authentification par OTP SMS, sans mot de passe), et les cotisations ainsi que les cycles sont suivis automatiquement avec journal d'audit. L'architecture est multi-tenant avec isolation stricte des données entre gérantset l'abonnement Premium se règle via Mobile Money (Orange Money, Moov Money) avec vérification cryptographique des webhooks de paiement.",
+        tags: ["Développement Mobile", "Développement Web"],
+        Technologies: ["Flutter", "Node.js", "Express.js", "PostgreSQL (Prisma)", "Redis", "JWT", "Africa's Talking (OTP SMS)", "SebPay (Mobile Money)", "Next.js"],
+        image: tontine,
+        demo: "https://matontineweb.netlify.app",
+        featured: true
     },
 ];
