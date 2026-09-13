@@ -17,7 +17,6 @@ import water_potability from '../assets/water_potability.png';
 import innofaso from '../assets/innofaso.png';
 import basyam from '../assets/basyam.png';
 import tontine from '../assets/matontine.png';
-import mathbotPlaceholder from '../assets/mathbot-placeholder.svg';
 
 export const projects = [
     {
@@ -34,7 +33,7 @@ export const projects = [
     {
         id: 2,
         title: "Bank Marketing Data Cleaning",
-        description: "Nettoyage et normalisation d’un fichier CSV de campagne marketing bancaire pour import PostgreSQL. Nettoyage et partitionnement en trois tables (client, campagne, économie).",
+        description: "Nettoyage et restructuration de 41 188 enregistrements clients d'une campagne marketing bancaire en trois tables normalisées (client, campagne, indicateurs économiques) prêtes pour import PostgreSQL : recodage des variables catégorielles, conversion de types, reconstruction des dates de contact. L'analyse de la table campagne fait ressortir un taux de conversion de 11,3% sur l'ensemble des appels.",
         tags: ["Data Cleaning", "ETL"],
         Technologies: ["Python", "Pandas", "NumPy"],
         image: bankMarketingCleaning,
@@ -45,7 +44,7 @@ export const projects = [
     {
         id: 3,
         title: "Agricultural Performance & Microcredit Analysis",
-        description: "Analyse des performances agricoles et de l’impact du microcrédit sur les agriculteurs au Sénégal (2019–2023) à travers un dashboard interactif.",
+        description: "Dashboard Power BI analysant l'octroi de microcrédits agricoles à 50 planteurs sénégalais répartis sur 5 régions, sur la période 2019-2023 (370 observations). Modélisation en étoile (5 tables) et mesures DAX personnalisées. Sur 89,8M FCFA de crédits accordés, le taux de remboursement global atteint 77,8% ; l'arachide ressort comme la culture la plus productive et le Sénégal Oriental comme première région bénéficiaire des financements.",
         tags: ["Data Analysis"],
         Technologies: ["Power BI", "Excel", "Data Visualization"],
         image: agricultureDashboard,
@@ -96,7 +95,7 @@ export const projects = [
     {
         id: 8,
         title: "Site Vitrine d'une agence digitale",
-        description: "Portfolio moderne et élégant pour une agence digitale, spécialisé en création digitale et gestion de communauté.",
+        description: "Site vitrine React 18 / Tailwind CSS pour une agence de création digitale et de gestion de communauté : sections Services, boutique de ressources téléchargeables et prise de contact, animations personnalisées et structure optimisée pour le SEO. Déployé sur Netlify.",
         tags: ["Développement Web"],
         Technologies: ["React", "Tailwind","Netlify"],
         image: siteVitrine,
@@ -149,7 +148,7 @@ export const projects = [
     {
         id: 13,
         title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
-        description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
+        description: "Analyse de la propagation du COVID-19 dans 143 pays croisée avec des indicateurs socio-économiques (PIB par habitant, espérance de vie, liberté de choix, soutien social) du World Happiness Report. Après agrégation par pays et calcul du taux d'infection maximal journalier, les corrélations obtenues restent faibles à modérées (r ≈ 0,29 avec l'espérance de vie, 0,25 avec le PIB par habitant, quasi nulle avec la liberté de choix) : pas de lien direct simple entre richesse d'un pays et vitesse de propagation.",
         tags: ["Data Analysis"],
         image: covid19,
         Technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
@@ -159,17 +158,16 @@ export const projects = [
     {
         id: 14,
         title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
-        description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
+        description: "Exercice guidé de manipulation de données : génération d'un jeu de 500 posts fictifs, nettoyage (doublons, types) et visualisation de l'engagement (histogramme, boxplot par catégorie) avec Pandas et Seaborn. Les données étant simulées aléatoirement, l'exercice porte sur la méthodologie (EDA, agrégation, visualisation) plutôt que sur des insights métier réels.",
         tags: ["Data Analysis"],
         image: figure,
-        Technologies: ["Python"],
+        Technologies: ["Python", "Pandas", "Seaborn"],
         repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
-        featured: true
     },
     {
         id: 15,
         title: "Quiz interactif avancé (Fev 2025)",
-        description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
+        description: "Quiz interactif développé en HTML/CSS/JavaScript à partir d'un projet guidé Coursera : 10 questions tirées aléatoirement parmi 13, 4 choix par question, décompte du score en temps réel (10 points par bonne réponse) et sauvegarde des résultats en local pour suivre sa progression d'une session à l'autre.",
         tags: ["Développement Web"],
         Technologies: ["Javascript", "Html", "Css"],
         image: quizImage,
@@ -187,7 +185,7 @@ export const projects = [
     {
         id: 17,
         title: "Analyse du Churn Client (Sept 2025)",
-        description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
+        description: "Analyse Excel de 7 043 clients d'un opérateur télécom (taux de churn global de 26,5%) : construction de KPIs et d'un dashboard pour isoler les facteurs de résiliation. Le type de contrat ressort comme le facteur n°1 (42,7% de churn en mensuel contre 2,8% en engagement 2 ans), suivi du paiement par chèque électronique (45,3% de churn contre 15-19% pour les autres moyens) et de la faible ancienneté (47,4% de churn sur les 12 premiers mois contre 9,5% au-delà de 4 ans).",
         tags: ["Data Analysis"],
         image: excel,
         Technologies: ["Excel"],
