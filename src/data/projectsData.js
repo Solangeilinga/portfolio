@@ -103,7 +103,7 @@ export const projects = [
         demo: "https://sbureaudigital.netlify.app"
     },
     {
-    id: 15,
+    id: 9,
     title: "Projet H2 — Prédiction de la potabilité de l'eau",
     description: "Pipeline complet de Machine Learning pour prédire si l'eau est potable à partir de paramètres physico-chimiques (pH, dureté, solides, chloramines, sulfate, conductivité, matière organique, trihalométhanes). Le projet inclut une analyse exploratoire poussée, la comparaison de 4 modèles (Régression Logistique, Random Forest, XGBoost, SVM), l'optimisation du seuil de classification avec SHAP pour l'interprétabilité, et une application interactive de terrain.",
     tags: ["Data Science", "Machine Learning", "ETL"],
@@ -113,65 +113,8 @@ export const projects = [
     demo: "https://projet-potabilite-eau-667gnpnfdko4imxs5vgx8a.streamlit.app/",
     featured: true
 },
-    {
-        id: 9,
-        title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
-        description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
-        tags: ["Data Analysis"],
-        image: covid19,
-        Technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-        repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
-        featured: true
-    },
-    {
-        id: 10,
-        title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
-        description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
-        tags: ["Data Analysis"],
-        image: figure,
-        Technologies: ["Python"],
-        repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
-        featured: true
-    },
-    {
-        id: 11,
-        title: "Quiz interactif avancé (Fev 2025)",
-        description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
-        tags: ["Développement Web"],
-        Technologies: ["Javascript", "Html", "Css"],
-        image: quizImage,
-        demo: "https://solangeilinga.github.io/Quiz/"
-    },
-    {
-        id: 12,
-        title: "La conception d'un Portfolio",
-        description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
-        tags: ["Développement Web"],
-        Technologies: ["Wordpress"],
-        image: portfolio1,
-        demo: "https://portfolio32299.wordpress.com/"
-    },
-    {
-        id: 13,
-        title: "Analyse du Churn Client (Sept 2025)",
-        description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
-        tags: ["Data Analysis"],
-        image: excel,
-        Technologies: ["Excel"],
-        repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
-        featured: true
-    },
-    {
-        id: 14,
-        title: "Site vitrine d'un Salon de Beauté",
-        description: "Site vitrine moderne pour un salon de beauté, avec design élégant et responsive. Animations fluides et navigation intuitive.",
-        tags: ["Développement Web"],
-        Technologies: ["React", "Tailwind"],
-        image: coiffure,
-        demo: "https://salontemplats.netlify.app/"
-    },
-    {
-    id: 16,
+  {
+    id: 10,
     title: "InnoFaso – Digitalisation Maintenance & Production",
     description: "Projet de fin de cycle Bachelor réalisé en équipe de 4 pour l'entreprise agroalimentaire InnoFaso (Burkina Faso). Digitalisation de 51 formulaires métiers (maintenance et production), centralisation des données dans une base PostgreSQL, et exploitation via des tableaux de bord avec indicateurs industriels en temps réel (MTBF, MTTR, taux de disponibilité). Développement d'un module d'Intelligence Artificielle entraîné sur 5 ans d'historique réel avec un modèle XGBoost atteignant un AUC-ROC de 0,99, intégrant également un service NLP de classification des causes de pannes et un assistant conversationnel. Architecture fullstack déployée en production sur Netlify, Render et Supabase.",
     tags: ["Développement Web", "Intelligence Artificielle", "Data Science", "Gestion de Projet"],
@@ -180,7 +123,7 @@ export const projects = [
     featured: true
 },
     {
-        id: 17,
+        id: 11,
         title: "BASYAM – Application mobile de bien-être mental pour les jeunes",
         description: "Application mobile de bien-être mental dont je suis fondatrice et développeuse, destinée aux jeunes. Elle propose un suivi quotidien de l'humeur avec analyse des tendances, des défis personnalisés recommandés selon l'historique de l'utilisateur, une communauté anonyme et bienveillante, ainsi qu'un annuaire de professionnels de santé mentale avec prise de rendez-vous en ligne. Un bouton d'alerte permet à tout utilisateur en détresse de prévenir immédiatement l'équipe de suivi. L'expérience est renforcée par de la gamification (points, badges, niveaux).",
         tags: ["Développement Mobile", "Développement Web"],
@@ -194,7 +137,7 @@ export const projects = [
         featured: true
     },
     {
-        id: 18,
+        id: 12,
         title: "MaTontine – Application multi-plateforme de gestion de tontines",
         description: "Application multi-plateforme de gestion de tontines (associations d'épargne rotative) pour l'Afrique de l'Ouest. Un gérant crée et administre ses groupes depuis l'app, les membres rejoignent uniquement avec leur numéro de téléphone (authentification par OTP SMS, sans mot de passe), et les cotisations ainsi que les cycles sont suivis automatiquement avec journal d'audit. L'architecture est multi-tenant avec isolation stricte des données entre gérantset l'abonnement Premium se règle via Mobile Money (Orange Money, Moov Money) avec vérification cryptographique des webhooks de paiement.",
         tags: ["Développement Mobile", "Développement Web"],
@@ -203,4 +146,62 @@ export const projects = [
         demo: "https://matontineweb.netlify.app",
         featured: true
     },
+    {
+        id: 13,
+        title: "Analyse de données COVID-19 et indicateurs socio-économiques (Dec 2025)",
+        description: "Analyse de la propagation de la COVID-19 dans différents pays à partir de données réelles.",
+        tags: ["Data Analysis"],
+        image: covid19,
+        Technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+        repo: "https://github.com/Solangeilinga/covid19-data-analysis.git",
+        featured: true
+    },
+    {
+        id: 14,
+        title: "Analyse des posts sur les réseaux sociaux (Sept 2025)",
+        description: "Projet simulant le rôle d'un analyste de données dans une agence de médias sociaux.",
+        tags: ["Data Analysis"],
+        image: figure,
+        Technologies: ["Python"],
+        repo: "https://github.com/Solangeilinga/analyse-donn-e-r-seau_sociaux.git",
+        featured: true
+    },
+    {
+        id: 15,
+        title: "Quiz interactif avancé (Fev 2025)",
+        description: "Conçu avec HTML, CSS et JavaScript. Questions à choix multiple avec décompte du score en temps réel et sauvegarde locale.",
+        tags: ["Développement Web"],
+        Technologies: ["Javascript", "Html", "Css"],
+        image: quizImage,
+        demo: "https://solangeilinga.github.io/Quiz/"
+    },
+    {
+        id: 16,
+        title: "La conception d'un Portfolio",
+        description: "Mon premier portfolio conçu avec Wordpress tout en utilisant des composants html, Css",
+        tags: ["Développement Web"],
+        Technologies: ["Wordpress"],
+        image: portfolio1,
+        demo: "https://portfolio32299.wordpress.com/"
+    },
+    {
+        id: 17,
+        title: "Analyse du Churn Client (Sept 2025)",
+        description: "Analyse complète des données clients pour identifier les facteurs d'attrition et créer un dashboard stratégique de suivi du churn.",
+        tags: ["Data Analysis"],
+        image: excel,
+        Technologies: ["Excel"],
+        repo: "https://github.com/Solangeilinga/Customer-curn-analysis.git",
+        featured: true
+    },
+    {
+        id: 18,
+        title: "Site vitrine d'un Salon de Beauté",
+        description: "Site vitrine moderne pour un salon de beauté, avec design élégant et responsive. Animations fluides et navigation intuitive.",
+        tags: ["Développement Web"],
+        Technologies: ["React", "Tailwind"],
+        image: coiffure,
+        demo: "https://salontemplats.netlify.app/"
+    },
+  
 ];

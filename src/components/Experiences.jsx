@@ -9,7 +9,7 @@ const experiences = [
         location: "Ouagadougou, Burkina Faso",
         period: "7 Avril 2026 - 29 Juin 2026",
         description: "Projet réalisé en équipe durant ma mobilité académique à 2iE : conception d'un module d'IA de prédiction des pannes d'équipements industriels, digitalisation des processus de production et gestion de projet complète (planning, diagramme de Gantt, contraintes), jusqu'à la soutenance finale.",
-        skills: ["Machine Learning", "Data Science", "Gestion de Projet"]
+        skills: ["Machine Learning", "Data Science","Node.js","React.js","Supabase","Gestion de Projet"]
     },
     {
         id: 1,
@@ -18,7 +18,7 @@ const experiences = [
         location: "Cotonou, Bénin",
         period: "juillet 2025 - Septembre 2025",
         description: "Refonte de la plateforme en ligne pour la startup",
-        skills: ["React", "Node.js"]
+        skills: ["React", "Node.js", "MySQL", "TailwindCSS"]
     },
     {
         id: 2,
