@@ -17,6 +17,7 @@ import water_potability from '../assets/water_potability.png';
 import innofaso from '../assets/innofaso.png';
 import basyam from '../assets/basyam.png';
 import tontine from '../assets/matontine.png';
+import mathbot from '../assets/mathbot.png'; // TODO: remplacer par une vraie capture d'écran
 
 export const projects = [
     {
@@ -143,6 +144,16 @@ export const projects = [
         Technologies: ["Flutter", "Node.js", "Express.js", "PostgreSQL (Prisma)", "Redis", "JWT", "Africa's Talking (OTP SMS)", "SebPay (Mobile Money)", "Next.js"],
         image: tontine,
         demo: "https://matontineweb.netlify.app",
+        featured: true
+    },
+    {
+        id: 19,
+        title: "MathBot – Tuteur IA de mathématiques pour le BEPC",
+        description: "Application full-stack de tutorat IA pour la préparation au BEPC (examen national du Burkina Faso) : chat pédagogique en streaming, analyse d'exercices par photo, simulateur d'examen chronométré et suivi de progression. Le cœur du projet est un pipeline RAG (Retrieval-Augmented Generation) qui ancre les exercices générés par l'IA sur un corpus de 66 vraies épreuves officielles (5 sessions, sourcées et vérifiées manuellement), plutôt que de laisser le modèle inventer librement. Le projet inclut deux harnais d'évaluation construits pour mesurer objectivement la qualité du système : un pour la pertinence du retrieval (Recall@K, MRR sur un jeu de requêtes étiquetées à la main, un tiers volontairement adversarial), et un en LLM-as-judge pour détecter les erreurs mathématiques et les non-conformités de format générées par le tuteur. Ce travail d'évaluation a permis de détecter et corriger plusieurs bugs réels en production, dont un bug de notation silencieux qui créditait systématiquement la mauvaise réponse aux élèves.",
+        tags: ["Intelligence Artificielle", "Data Science", "Développement Web"],
+        Technologies: ["Node.js", "Express", "PostgreSQL (pgvector)", "Supabase", "Groq", "Gemini", "React", "Vite", "Vercel", "Render"],
+        image: mathbot,
+        demo: "https://mathbot-frontend.vercel.app",
         featured: true
     },
     {
