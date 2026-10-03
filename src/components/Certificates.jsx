@@ -5,7 +5,17 @@ import { RiFileExcel2Fill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoMeta } from "react-icons/bi";
 
+
 const certificates = [
+    {
+        id: 1,
+        title: "Associate Data Scientist",
+        issuer: "Datacamp",
+        category: "Cloud & Data",
+        icon: <FaDatabase className="text-black" />,
+        credentialLink: "https://www.datacamp.com/certificate/DSA0010922890034",
+        color: "#3AC65A"
+    },
     {
         id: 1,
         title: "Data Engineering",
